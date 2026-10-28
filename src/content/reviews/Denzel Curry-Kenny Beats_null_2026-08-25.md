@@ -6,10 +6,14 @@ reviewed_on: "2026-08-25"
 week: null
 genres: ["Hip-Hop/Rap"]
 standout_tracks:
-  - "Cold Night in Hell"
-  - "Candlelight"
-  - "Product"
-  - "Crown"
+  - title: "Cold Night in Hell"
+    url: "https://www.youtube.com/watch?v=JaPgqM_2h6Q"
+  - title: "Candlelight"
+    url: "https://www.youtube.com/watch?v=d9eZEsmqDNg"
+  - title: "Product"
+    url: "https://www.youtube.com/watch?v=V4D7mE9DHz8"
+  - title: "Crown"
+    url: "https://www.youtube.com/watch?v=YoQjbSQB-WE"
 status: "published"
 cover: "denzel-curry-kenny-beats-ii.jpg"
 ---

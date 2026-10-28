@@ -6,8 +6,10 @@ reviewed_on: "2026-10-23"
 week: null
 genres: ["Hip-Hop/Rap"]
 standout_tracks:
-  - "Karma Tax"
-  - "Helpless"
+  - title: "Karma Tax"
+    url: "https://www.youtube.com/watch?v=rXeyeY0OfYo"
+  - title: "Helpless"
+    url: "https://www.youtube.com/watch?v=3gQcYrPXR4U"
 status: "published"
 cover: "anderson-paak-and-cordae-heavy-is-the-crown.jpg"
 ---

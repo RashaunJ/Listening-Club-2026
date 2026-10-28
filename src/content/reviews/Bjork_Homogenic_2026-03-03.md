@@ -6,8 +6,10 @@ reviewed_on: "2026-03-03"
 week: null
 genres: ["Electronica", "Trip Hop", "Art Pop"]
 standout_tracks:
-  - "All Neon Like"
-  - "Immature"
+  - title: "All Neon Like"
+    url: "https://www.youtube.com/watch?v=G_vjm-TCUyw"
+  - title: "Immature"
+    url: "https://www.youtube.com/watch?v=48EAuWUiZ_s"
 status: "published"
 cover: "bjork-homogenic.jpg"
 ---

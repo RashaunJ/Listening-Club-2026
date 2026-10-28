@@ -6,9 +6,12 @@ reviewed_on: "2026-05-22"
 week: null
 genres: ["R&B/Soul"]
 standout_tracks:
-  - "On Me (With Odeal)"
-  - "Running Late Freestyle (with Mereba)"
-  - "Bear"
+  - title: "On Me (With Odeal)"
+    url: "https://www.youtube.com/watch?v=wRKhV7dyZos"
+  - title: "Running Late Freestyle (with Mereba)"
+    url: "https://www.youtube.com/watch?v=b3ChNi9GYkc"
+  - title: "Bear"
+    url: "https://www.youtube.com/watch?v=RY1y47RTiUY"
 status: "published"
 cover: "6lack-love-is-the-new-gangsta.jpg"
 ---

@@ -6,9 +6,12 @@ reviewed_on: "2026-10-17"
 week: null
 genres: ["Hip-Hop/Rap"]
 standout_tracks:
-  - "Lamb Truck Keys"
-  - "Look Like My Mama"
-  - "Rock Bottom"
+  - title: "Lamb Truck Keys"
+    url: "https://www.youtube.com/watch?v=h9i7QQ0pDmk"
+  - title: "Look Like My Mama"
+    url: "https://www.youtube.com/watch?v=87gO7HMUHeo"
+  - title: "Rock Bottom"
+    url: "https://www.youtube.com/watch?v=5FtJBVdMOxU"
 status: "published"
 cover: "az-chike-no-rest-for-the-wicked.jpg"
 year_rank: 4

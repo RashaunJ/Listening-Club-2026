@@ -6,7 +6,8 @@ reviewed_on: "2026-06-17"
 week: null
 genres: ["Progressive Rock", "Art Rock"]
 standout_tracks:
-  - "Shine on you Crazy Diamond (Pts 6-9)"
+  - title: "Shine on you Crazy Diamond (Pts 6-9)"
+    url: "https://www.youtube.com/watch?v=ur4J7hhhto8"
 status: "published"
 cover: "pink-floyd-wish-you-were-here.jpg"
 ---

@@ -1,4 +1,5 @@
 ---
+import type { CollectionEntry } from "astro:content";
 import BaseLayout from "./BaseLayout.astro";
 import "../styles/review.css";
 
@@ -8,7 +9,7 @@ interface Props {
     score: number;
     cover?: string;
     genres?: string[];
-    standoutTracks?: string[];
+    standoutTracks?: CollectionEntry<"reviews">["data"]["standout_tracks"];
 }
 
 const {
@@ -19,6 +20,32 @@ const {
     genres = [],
     standoutTracks = [],
 } = Astro.props;
+
+const trackLinks = standoutTracks.map((track) => {
+    const details = typeof track === "string" ? { title: track } : track;
+    const href =
+        details.url ??
+        `https://www.youtube.com/results?search_query=${encodeURIComponent(
+            `${artist} ${details.search_title ?? details.title} ${title}`,
+        )}`;
+    const hostname = new URL(href).hostname;
+    const isYouTube =
+        hostname === "youtu.be" ||
+        hostname === "youtube.com" ||
+        hostname.endsWith(".youtube.com");
+    const label = !details.url
+        ? "Find on YouTube"
+        : isYouTube
+          ? "YouTube"
+          : "Listen";
+
+    return {
+        title: details.title,
+        href,
+        label,
+        ariaLabel: `${label}: ${details.title} by ${artist} — ${title} (opens in a new tab)`,
+    };
+});
 
 const coverUrl = cover
     ? `${import.meta.env.BASE_URL}images/albums/${cover}`
@@ -69,8 +96,20 @@ const coverUrl = cover
                         <h2 class="section-label">STANDOUT TRACKS</h2>
 
                         <ol>
-                            {standoutTracks.map((track) => (
-                                <li>{track}</li>
+                            {trackLinks.map((track) => (
+                                <li>
+                                    {track.title}{" "}
+                                    <a
+                                        class="standout-link"
+                                        href={track.href}
+                                        aria-label={track.ariaLabel}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        {track.label}{" "}
+                                        <span aria-hidden="true">↗</span>
+                                    </a>
+                                </li>
                             ))}
                         </ol>
                     </section>

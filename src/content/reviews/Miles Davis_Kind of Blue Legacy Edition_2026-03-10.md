@@ -6,8 +6,11 @@ reviewed_on: "2026-03-10"
 week: null
 genres: ["Modal Jazz"]
 standout_tracks:
-  - "Blue in Green (partially for the meme value)"
-  - "So What?"
+  - title: "Blue in Green (partially for the meme value)"
+    url: "https://www.youtube.com/watch?v=TLDflhhdPCg"
+    search_title: "Blue in Green"
+  - title: "So What?"
+    url: "https://www.youtube.com/watch?v=ylXk1LBvIqU"
 status: "published"
 cover: "miles-davis-kind-of-blue-legacy-edition.jpg"
 ---

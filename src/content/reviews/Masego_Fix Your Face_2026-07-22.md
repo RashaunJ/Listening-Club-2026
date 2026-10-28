@@ -6,9 +6,12 @@ reviewed_on: "2026-07-22"
 week: null
 genres: ["R&B/Soul"]
 standout_tracks:
-  - "Someone (feat. Keyshia Cole)"
-  - "Hello (feat Buju Banton)"
-  - "Dotted Line"
+  - title: "Someone (feat. Keyshia Cole)"
+    url: "https://www.youtube.com/watch?v=I6CCW8yZFug"
+  - title: "Hello (feat Buju Banton)"
+    url: "https://www.youtube.com/watch?v=EAOm2B6PR54"
+  - title: "Dotted Line"
+    url: "https://www.youtube.com/watch?v=wZYfhrvOc20"
 status: "published"
 cover: "masego-fix-your-face.jpg"
 ---

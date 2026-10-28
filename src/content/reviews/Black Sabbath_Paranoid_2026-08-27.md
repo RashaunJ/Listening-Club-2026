@@ -6,8 +6,11 @@ reviewed_on: "2026-08-27"
 week: null
 genres: ["Metal"]
 standout_tracks:
-  - "Paranoid (Obligatory)"
-  - "Planet Caravan"
+  - title: "Paranoid (Obligatory)"
+    url: "https://www.youtube.com/watch?v=BOTIIw76qiE"
+    search_title: "Paranoid"
+  - title: "Planet Caravan"
+    url: "https://www.youtube.com/watch?v=bm2N2nHqITY"
 status: "published"
 cover: "black-sabbath-paranoid.jpg"
 ---

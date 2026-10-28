@@ -6,8 +6,10 @@ reviewed_on: "2026-08-12"
 week: null
 genres: ["Experimental Rock", "Noise Rock", "Drone"]
 standout_tracks:
-  - "A Little God in My Hands"
-  - "Kirsten Supine"
+  - title: "A Little God in My Hands"
+    url: "https://www.youtube.com/watch?v=Nl4LWIxT8B4"
+  - title: "Kirsten Supine"
+    url: "https://www.youtube.com/watch?v=cYIi9fU6s18"
 status: "published"
 cover: "swans-to-be-kind.jpg"
 ---

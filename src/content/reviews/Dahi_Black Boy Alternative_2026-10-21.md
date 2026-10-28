@@ -6,9 +6,12 @@ reviewed_on: "2026-10-21"
 week: null
 genres: ["Alternative", "R&B/Soul"]
 standout_tracks:
-  - "How to Pray"
-  - "Who Are You"
-  - "Love Me"
+  - title: "How to Pray"
+    url: "https://www.youtube.com/watch?v=hj5BZJ5OflE"
+  - title: "Who Are You"
+    url: "https://www.youtube.com/watch?v=zBKxL-CUK98"
+  - title: "Love Me"
+    url: "https://www.youtube.com/watch?v=kES7AwNlPGQ"
 status: "published"
 cover: "dahi-black-boy-alternative.jpg"
 ---

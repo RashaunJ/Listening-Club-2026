@@ -4,6 +4,10 @@ import { getCollection } from "astro:content";
 import { rankings } from "../../data/rankings";
 import AOTYFeature from "../../components/AOTYFeature.astro";
 import AOTYRetrospective from "../../content/editorials/aoty-2026.md";
+import "../../styles/rankings.css";
+import RankedAlbum from "../../components/RankedAlbum.astro";
+import AlbumCard from "../../components/AlbumCard.astro";
+import "../../styles/archive.css";
 
 // Load published reviews
 const reviews = await getCollection(
@@ -68,24 +72,50 @@ const honorableMentions = rankings.honorableMentions
 
             <h2>Other Rankings</h2>
 
-            <ol start={2}>
-                {remainingRankings.map((review) => (
-                    <li>
-                        {review.data.artist} — {review.data.title}(
-                        {review.data.score}/10)
-                    </li>
-                ))}
-            </ol>
+            <section class="rankings-list" aria-labelledby="top-ten-heading">
+                <header class="rankings-list-header">
+                    <p class="eyebrow">THE REST OF THE BEST</p>
+                    <h2 id="top-ten-heading">The Top 10.</h2>
+                    <p>The earworms that earned spots of my playlists.</p>
+                </header>
 
-            <h2>Honorable Mentions</h2>
+                <div>
+                    {remainingRankings.map((review) => (
+                        <RankedAlbum
+                            review={review}
+                            blurb={rankings.blurbs[review.id]}
+                        />
+                    ))}
+                </div>
+            </section>
 
-            <ul>
-                {honorableMentions.map((review) => (
-                    <li>
-                        {review.data.artist} — {review.data.title}
-                    </li>
-                ))}
-            </ul>
+            {honorableMentions.length > 0 && (
+                <section class="honorable-mentions">
+                    <header class="honorable-header">
+                        <h2>Honorable Mentions</h2>
+                        <p>
+                            Records that fell outside my Top 10, but still
+                            deserve a shout out.
+                        </p>
+                    </header>
+
+                    <div class="album-grid">
+                        {honorableMentions.map((review) => (
+                            <AlbumCard
+                                artist={review.data.artist}
+                                title={review.data.title}
+                                score={review.data.score}
+                                cover={review.data.cover}
+                                genres={review.data.genres}
+                                href={`${import.meta.env.BASE_URL}reviews/${review.id
+                                    .split("/")
+                                    .map(encodeURIComponent)
+                                    .join("/")}`}
+                            />
+                        ))}
+                    </div>
+                </section>
+            )}
         </>
     ) : (
         <section>

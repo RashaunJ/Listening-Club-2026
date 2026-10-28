@@ -41,6 +41,31 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
+## Standout track links
+
+Review frontmatter supports plain track names and entries with a curated URL:
+
+```yaml
+standout_tracks:
+  - "A track without a saved link"
+  - title: "Another Track"
+    url: "https://www.youtube.com/watch?v=..."
+  - title: "Track Title (with an editorial note)"
+    search_title: "Track Title"
+```
+
+Saved URLs appear beside the title as **YouTube ↗** (or **Listen ↗** for another
+service). Tracks without a URL get a **Find on YouTube ↗** search link using the
+artist, track, and album. Optional `search_title` overrides only the search term,
+not the displayed title. URLs must use HTTP or HTTPS.
+
+Links open in a new tab. Everything is generated as static HTML, with no player,
+client-side JavaScript, API key, or network request required during builds.
+The researched links and unresolved matches are recorded in
+[`docs/standout-track-sources.json`](docs/standout-track-sources.json).
+YouTube availability may change or vary by region; update a saved URL or remove
+it to restore the search fallback.
+
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

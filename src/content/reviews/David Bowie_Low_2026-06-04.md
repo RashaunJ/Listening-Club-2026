@@ -6,9 +6,12 @@ reviewed_on: "2026-06-04"
 week: null
 genres: ["Art Rock", "Electronic", "Ambient"]
 standout_tracks:
-  - "Warszawa"
-  - "Weeping Wall"
-  - "Subterraneans"
+  - title: "Warszawa"
+    url: "https://www.youtube.com/watch?v=V_6IhsQEBX0"
+  - title: "Weeping Wall"
+    url: "https://www.youtube.com/watch?v=Fvks6cibf-k"
+  - title: "Subterraneans"
+    url: "https://www.youtube.com/watch?v=-4rs9CBglpY"
 status: "published"
 cover: "david-bowie-low.jpg"
 ---

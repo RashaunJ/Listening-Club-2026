@@ -6,7 +6,8 @@ reviewed_on: "2026-03-25"
 week: null
 genres: ["Jazz-Funk", "Jazz Fusion"]
 standout_tracks:
-  - "Chameleon"
+  - title: "Chameleon"
+    url: "https://www.youtube.com/watch?v=iqomTAiRnVM"
 status: "published"
 cover: "herbie-hancock-head-hunters.jpg"
 ---

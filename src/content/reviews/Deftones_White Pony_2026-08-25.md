@@ -6,9 +6,12 @@ reviewed_on: "2026-08-25"
 week: null
 genres: ["Alternative Metal", "Nu Metal"]
 standout_tracks:
-  - "Rx Queen"
-  - "Knife Party"
-  - "Change (In the House of Flies)"
+  - title: "Rx Queen"
+    url: "https://www.youtube.com/watch?v=XxWildqgiKk"
+  - title: "Knife Party"
+    url: "https://www.youtube.com/watch?v=ibeFnxKiom8"
+  - title: "Change (In the House of Flies)"
+    url: "https://www.youtube.com/watch?v=WPpDyIJdasg"
 status: "published"
 cover: "deftones-white-pony.jpg"
 year_rank: 7

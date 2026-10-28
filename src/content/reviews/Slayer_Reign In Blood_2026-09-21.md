@@ -6,8 +6,10 @@ reviewed_on: "2026-09-21"
 week: null
 genres: ["Thrash Metal"]
 standout_tracks:
-  - "Angel of Death"
-  - "Altar of Sacrifice"
+  - title: "Angel of Death"
+    url: "https://www.youtube.com/watch?v=TnRZhLRv6eM"
+  - title: "Altar of Sacrifice"
+    url: "https://www.youtube.com/watch?v=FAxxyQk43nc"
 status: "published"
 cover: "slayer-reign-in-blood.jpg"
 year_rank: 10

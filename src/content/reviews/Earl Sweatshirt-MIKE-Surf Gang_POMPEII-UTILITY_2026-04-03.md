@@ -6,10 +6,15 @@ reviewed_on: "2026-04-03"
 week: null
 genres: ["Hip-Hop/Rap"]
 standout_tracks:
-  - "Minty"
-  - "Back Home"
-  - ":( again :)"
-  - "React"
+  - title: "Minty"
+    url: "https://www.youtube.com/watch?v=EBWz_ZlKgLY"
+  - title: "Back Home"
+    url: "https://www.youtube.com/watch?v=6XZjr0fdfrw"
+  - title: ":( again :)"
+    url: "https://www.youtube.com/watch?v=vgCKmZMMILI"
+    search_title: "again"
+  - title: "React"
+    url: "https://www.youtube.com/watch?v=vYHp6k_AwP8"
 status: "published"
 cover: "earl-sweatshirt-mike-surf-gang-pompeii-utility.jpg"
 ---

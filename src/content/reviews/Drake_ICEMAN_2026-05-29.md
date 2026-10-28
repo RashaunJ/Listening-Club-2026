@@ -6,8 +6,10 @@ reviewed_on: "2026-05-29"
 week: null
 genres: ["Hip-Hop/Rap"]
 standout_tracks:
-  - "Make Them Cry"
-  - "National Treasures"
+  - title: "Make Them Cry"
+    url: "https://www.youtube.com/watch?v=uxNuuys19XE"
+  - title: "National Treasures"
+    url: "https://www.youtube.com/watch?v=sfDPlxAQ_vM"
 status: "published"
 cover: "drake-iceman.jpg"
 ---

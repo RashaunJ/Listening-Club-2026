@@ -6,9 +6,12 @@ reviewed_on: "2026-07-13"
 week: null
 genres: ["Hardcore Punk"]
 standout_tracks:
-  - "Rise Above"
-  - "TV Party"
-  - "Gimmie Gimmie Gimmie"
+  - title: "Rise Above"
+    url: "https://www.youtube.com/watch?v=wDUYCyajDcs"
+  - title: "TV Party"
+    url: "https://www.youtube.com/watch?v=psUOyXGacL0"
+  - title: "Gimmie Gimmie Gimmie"
+    url: "https://www.youtube.com/watch?v=TcRujcvfQeY"
 status: "published"
 cover: "black-flag-damaged.jpg"
 ---

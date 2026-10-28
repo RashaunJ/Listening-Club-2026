@@ -6,9 +6,12 @@ reviewed_on: "2026-06-04"
 week: null
 genres: ["Hip-Hop/Rap"]
 standout_tracks:
-  - "Chaos Constant"
-  - "Blame Burnays"
-  - "Bandido Generoso"
+  - title: "Chaos Constant"
+    url: "https://www.youtube.com/watch?v=WzBokioX3nk"
+  - title: "Blame Burnays"
+    url: "https://www.youtube.com/watch?v=NI22EzJMRHU"
+  - title: "Bandido Generoso"
+    url: "https://www.youtube.com/watch?v=wKpndgIxGmc"
 status: "published"
 cover: "sideshow-tigray-funk.jpg"
 year_rank: 1

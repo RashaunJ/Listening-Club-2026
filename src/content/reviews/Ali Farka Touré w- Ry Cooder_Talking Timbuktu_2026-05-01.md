@@ -6,10 +6,14 @@ reviewed_on: "2026-05-01"
 week: null
 genres: ["Malian Folk"]
 standout_tracks:
-  - "Bonde"
-  - "Soukora"
-  - "Gomni"
-  - "Ai Du"
+  - title: "Bonde"
+    url: "https://www.youtube.com/watch?v=7pgFmNRvskg"
+  - title: "Soukora"
+    url: "https://www.youtube.com/watch?v=AWpXCKy83r0"
+  - title: "Gomni"
+    url: "https://www.youtube.com/watch?v=W_uxPcz9tgk"
+  - title: "Ai Du"
+    url: "https://www.youtube.com/watch?v=GZrHGJKIUE8"
 status: "published"
 cover: "ali-farka-toure-w-ry-cooder-talking-timbuktu.jpg"
 ---

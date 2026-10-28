@@ -6,9 +6,12 @@ reviewed_on: "2026-07-29"
 week: null
 genres: ["Noise Rock", "Indie Rock", "Art Punk"]
 standout_tracks:
-  - "Cross the Breeze"
-  - "Eliminator Jr"
-  - "Kissability"
+  - title: "Cross the Breeze"
+    url: "https://www.youtube.com/watch?v=wzsjWKVAy2Q"
+  - title: "Eliminator Jr"
+    url: "https://www.youtube.com/watch?v=pNPp9lfzRzY"
+  - title: "Kissability"
+    url: "https://www.youtube.com/watch?v=nbWaT9XMH18"
 status: "published"
 cover: "sonic-youth-daydream-nation.jpg"
 ---

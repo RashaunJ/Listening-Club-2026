@@ -6,9 +6,12 @@ reviewed_on: "2026-05-22"
 week: null
 genres: ["Hip-Hop/Rap"]
 standout_tracks:
-  - "babygirl"
-  - "Chat"
-  - "GYBB"
+  - title: "babygirl"
+    url: "https://www.youtube.com/watch?v=gIn4ZoMgwp8"
+  - title: "Chat"
+    url: "https://www.youtube.com/watch?v=u-HHrALkjeM"
+  - title: "GYBB"
+    url: "https://www.youtube.com/watch?v=KTE99OorsM8"
 status: "published"
 cover: "jpegmafia-experimental-rap.jpg"
 ---

@@ -6,9 +6,12 @@ reviewed_on: "2026-09-17"
 week: null
 genres: ["Thrash Metal"]
 standout_tracks:
-  - "Battery"
-  - "Disposable Heroes"
-  - "Welcome Home (Sanitarium)"
+  - title: "Battery"
+    url: "https://www.youtube.com/watch?v=a_ITtP033RI"
+  - title: "Disposable Heroes"
+    url: "https://www.youtube.com/watch?v=jtNrx1c3Xh8"
+  - title: "Welcome Home (Sanitarium)"
+    url: "https://www.youtube.com/watch?v=ZiIc0HuJ78Q"
 status: "published"
 cover: "metallica-master-of-puppets.jpg"
 ---
