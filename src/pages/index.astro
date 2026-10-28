@@ -1,11 +1,72 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import FeaturedReview from "../components/FeaturedReview.astro";
+import { getCollection } from "astro:content";
+import ListeningStats from "../components/ListeningStats.astro";
+import "../styles/home.css";
+import "../styles/archive.css";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import AlbumCard from "../components/AlbumCard.astro";
+
+const base = import.meta.env.BASE_URL;
+
+const reviews = await getCollection(
+    "reviews",
+    ({ data }) => data.status === "published",
+);
+
+const recentReviews = [...reviews].sort(
+    (a, b) => b.data.reviewed_on.getTime() - a.data.reviewed_on.getTime(),
+);
+
+const featuredReview = recentReviews[0];
+const additionalReviews = recentReviews.slice(1, 4);
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout title="Home">
+    <div class="home">
+        <header class="home-intro">
+            <p class="eyebrow">AN EXPERIMENT IN LISTENING</p>
+
+            <h1>A year outside my comfort zone.</h1>
+
+            <p class="home-description">
+                A year's worth of intentional listening, trying to go beyond the
+                familiar. Finding some new sounds, revisiting projects that
+                deserved a second listen, and a few records that just didn't
+                hit.
+            </p>
+            <p class="home-description">
+                In other words: Trying to break away from being force fed my
+                taste by algorithms.
+            </p>
+        </header>
+
+        {featuredReview && <FeaturedReview review={featuredReview} />}
+        <ListeningStats reviews={reviews} />
+        {additionalReviews.length > 0 && (
+            <section class="home-archive">
+                <div class="home-section-heading">
+                    <h2>From the Archive.</h2>
+                    <a href={`${base}reviews/`}>ALL REVIEWS →</a>
+                </div>
+
+                <div class="album-grid">
+                    {additionalReviews.map((review) => (
+                        <AlbumCard
+                            artist={review.data.artist}
+                            title={review.data.title}
+                            score={review.data.score}
+                            cover={review.data.cover}
+                            genres={review.data.genres}
+                            href={`${base}reviews/${review.id
+                                .split("/")
+                                .map(encodeURIComponent)
+                                .join("/")}`}
+                        />
+                    ))}
+                </div>
+            </section>
+        )}
+    </div>
+</BaseLayout>

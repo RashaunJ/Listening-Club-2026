@@ -1,0 +1,40 @@
+---
+import "../styles/global.css";
+
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{title} | 2026 in Music: A Listening Journal</title>
+    </head>
+
+    <body>
+        <header class="site-header">
+            <a class="site-logo" href={base}>
+                2026 in Music: A One Man Listening Club/Journal
+            </a>
+
+            <nav aria-label="Main navigation">
+                <a href={`${base}reviews/`}>Reviews</a>
+                <a href="/rankings">Rankings</a>
+            </nav>
+        </header>
+
+        <main class="site-content">
+            <slot />
+        </main>
+
+        <footer class="site-footer">
+            <p>52 Weeks of Music — A listening experiment.</p>
+        </footer>
+    </body>
+</html>

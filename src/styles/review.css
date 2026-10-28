@@ -1,0 +1,159 @@
+
+.review {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.review-header {
+  margin-bottom: 2.5rem;
+}
+
+.eyebrow,
+.section-label {
+  font-family: Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  text-transform: uppercase;
+}
+
+.review-header h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  margin: 0.75rem 0;
+}
+
+.review-header .artist {
+  font-family: Arial, sans-serif;
+  color: var(--color-muted);
+  font-size: 1.2rem;
+}
+
+.review-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.artwork img,
+.artwork-placeholder {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.artwork-placeholder {
+  background: #ded8ce;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.artwork-placeholder span {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.review-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.score {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color-text);
+  color: white;
+  padding: 1rem 1.5rem;
+}
+
+.score strong {
+  font-family: Arial, sans-serif;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.score span {
+  font-family: Arial, sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  margin-top: 0.5rem;
+}
+
+.standouts ol {
+  list-style: decimal-leading-zero;
+  padding-left: 2rem;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  line-height: 2;
+}
+
+.standouts li {
+  padding-left: 0.5rem;
+}
+
+.review-body {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.review-prose {
+  max-width: 65ch;
+  font-size: 1.15rem;
+  line-height: 1.85;
+}
+
+.review-prose p {
+  margin: 0 0 1.5rem;
+}
+
+.review-prose h2,
+.review-prose h3 {
+  line-height: 1.2;
+  margin-top: 2rem;
+}
+
+.review-footer {
+  padding: 2rem 0;
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+}
+
+.review-footer a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.review-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 650px) {
+  .review-hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .review-details {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .review-prose {
+    font-size: 1.05rem;
+  }
+}

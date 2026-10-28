@@ -1,0 +1,99 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import { rankings } from "../../data/rankings";
+import AOTYFeature from "../../components/AOTYFeature.astro";
+import AOTYRetrospective from "../../content/editorials/aoty-2026.md";
+
+// Load published reviews
+const reviews = await getCollection(
+    "reviews",
+    ({ data }) => data.status === "published",
+);
+
+// Select only albums with a year_rank
+const rankedReviews = reviews
+    .filter((review) => review.data.year_rank != null)
+    .sort((a, b) => a.data.year_rank! - b.data.year_rank!);
+
+// Validate duplicate ranks
+const ranks = rankedReviews.map((review) => review.data.year_rank);
+
+if (new Set(ranks).size !== ranks.length) {
+    throw new Error("Duplicate year_rank values detected!");
+}
+
+// Select Album of the Year
+const albumOfTheYear = rankedReviews.find(
+    (review) => review.data.year_rank === 1,
+);
+
+// Everything except AOTY
+const remainingRankings = rankedReviews.filter(
+    (review) => review.data.year_rank !== 1,
+);
+
+// Resolve honorable mentions
+const reviewMap = new Map(reviews.map((review) => [review.id, review]));
+
+const honorableMentions = rankings.honorableMentions
+    .map((id) => reviewMap.get(id))
+    .filter((review) => review !== undefined);
+---
+
+<BaseLayout title="Rankings">
+    <h1>{rankings.headline}</h1>
+    <p>{rankings.subtitle}</p>
+
+    {rankings.published ? (
+        <>
+            <h2>Album of the Year</h2>
+            <!--
+            {albumOfTheYear ? (
+                <div>
+                    <h3>{albumOfTheYear.data.title}</h3>
+                    <p>{albumOfTheYear.data.artist}</p>
+                    <p>Score: {albumOfTheYear.data.score}/10</p>
+                </div>
+            ) : (
+                <p>No Album of the Year selected yet.</p>
+            )} -->
+            {albumOfTheYear ? (
+                <AOTYFeature review={albumOfTheYear}>
+                    <AOTYRetrospective />
+                </AOTYFeature>
+            ) : (
+                <p>No Album of the Year selected yet.</p>
+            )}
+
+            <h2>Other Rankings</h2>
+
+            <ol start={2}>
+                {remainingRankings.map((review) => (
+                    <li>
+                        {review.data.artist} — {review.data.title}(
+                        {review.data.score}/10)
+                    </li>
+                ))}
+            </ol>
+
+            <h2>Honorable Mentions</h2>
+
+            <ul>
+                {honorableMentions.map((review) => (
+                    <li>
+                        {review.data.artist} — {review.data.title}
+                    </li>
+                ))}
+            </ul>
+        </>
+    ) : (
+        <section>
+            <h2>Rankings Coming Soon</h2>
+            <p>
+                The listening experiment isn't over yet. Check back for the
+                final verdict.
+            </p>
+        </section>
+    )}
+</BaseLayout>

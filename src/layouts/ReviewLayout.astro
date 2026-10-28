@@ -1,0 +1,94 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import "../styles/review.css";
+
+interface Props {
+    artist: string;
+    title: string;
+    score: number;
+    cover?: string;
+    genres?: string[];
+    standoutTracks?: string[];
+}
+
+const {
+    artist,
+    title,
+    score,
+    cover,
+    genres = [],
+    standoutTracks = [],
+} = Astro.props;
+
+const coverUrl = cover
+    ? `${import.meta.env.BASE_URL}images/albums/${cover}`
+    : null;
+---
+
+<BaseLayout title={`${artist} — ${title}`}>
+    <article class="review">
+        <header class="review-header">
+            <p class="eyebrow">
+                ALBUM REVIEW
+                {genres.length > 0 && ` / ${genres.join(", ")}`}
+            </p>
+
+            <h1>{title}</h1>
+            <p class="artist">{artist}</p>
+        </header>
+
+        <div class="review-hero">
+            <div class="artwork">
+                {coverUrl ? (
+                    <img
+                        src={coverUrl}
+                        alt={`Cover art for ${title} by ${artist}`}
+                        width="500"
+                        height="500"
+                    />
+                ) : (
+                    <div class="artwork-placeholder">
+                        <span>{title}</span>
+                        <small>{artist}</small>
+                    </div>
+                )}
+            </div>
+
+            <aside class="review-details">
+                <div>
+                    <p class="section-label">INITIAL THOUGHTS</p>
+
+                    <div class="score">
+                        <strong>{score.toFixed(1)}</strong>
+                        <span>OUT OF 10</span>
+                    </div>
+                </div>
+
+                {standoutTracks.length > 0 && (
+                    <section class="standouts">
+                        <h2 class="section-label">STANDOUT TRACKS</h2>
+
+                        <ol>
+                            {standoutTracks.map((track) => (
+                                <li>{track}</li>
+                            ))}
+                        </ol>
+                    </section>
+                )}
+            </aside>
+        </div>
+
+        <section class="review-body">
+            <p class="eyebrow">THE REVIEW</p>
+            <div class="review-prose">
+                <slot />
+            </div>
+        </section>
+
+        <footer class="review-footer">
+            <a href={`${import.meta.env.BASE_URL}reviews/`}>
+                ← Back to reviews
+            </a>
+        </footer>
+    </article>
+</BaseLayout>

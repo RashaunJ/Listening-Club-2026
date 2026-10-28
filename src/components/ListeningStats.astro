@@ -1,0 +1,50 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+    reviews: CollectionEntry<"reviews">[];
+}
+
+const { reviews } = Astro.props;
+
+const count = reviews.length;
+
+const average =
+    count > 0
+        ? reviews.reduce((sum, review) => sum + review.data.score, 0) / count
+        : null;
+
+const highest =
+    count > 0 ? Math.max(...reviews.map((review) => review.data.score)) : null;
+
+const stats = [
+    {
+        label: "ALBUMS REVIEWED",
+        value: String(count),
+    },
+    {
+        label: "AVERAGE SCORE",
+        value: average !== null ? average.toFixed(1) : "—",
+    },
+    {
+        label: "HIGHEST SCORE",
+        value: highest !== null ? highest.toFixed(1) : "—",
+    },
+];
+---
+
+<section class="listening-stats" aria-labelledby="stats-heading">
+    <div class="stats-heading">
+        <h2 id="stats-heading">THE LISTENING EXPERIMENT</h2>
+        <span>2026 EDITION</span>
+    </div>
+
+    <div class="stats-grid">
+        {stats.map((stat) => (
+            <div class="stat">
+                <strong>{stat.value}</strong>
+                <span>{stat.label}</span>
+            </div>
+        ))}
+    </div>
+</section>
