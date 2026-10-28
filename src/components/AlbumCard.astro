@@ -1,4 +1,6 @@
 ---
+import { base } from "../paths";
+
 interface Props {
     artist: string;
     title: string;
@@ -10,9 +12,7 @@ interface Props {
 
 const { artist, title, score, href, cover, genres = [] } = Astro.props;
 
-const coverUrl = cover
-    ? `${import.meta.env.BASE_URL}images/albums/${cover}`
-    : null;
+const coverUrl = cover ? `${base}images/albums/${cover}` : null;
 ---
 
 <article

@@ -8,7 +8,7 @@ interface Props {
 const { review } = Astro.props;
 const { artist, title, score, cover, genres, reviewed_on } = review.data;
 
-const base = import.meta.env.BASE_URL;
+import { base } from "../paths";
 const coverUrl = cover ? `${base}images/albums/${cover}` : null;
 
 const reviewUrl = `${base}reviews/${review.id

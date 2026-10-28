@@ -2,6 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import { rankings } from "../../data/rankings";
+import { base } from "../../paths";
 import AOTYFeature from "../../components/AOTYFeature.astro";
 import AOTYRetrospective from "../../content/editorials/aoty-2026.md";
 import "../../styles/rankings.css";
@@ -107,7 +108,7 @@ const honorableMentions = rankings.honorableMentions
                                 score={review.data.score}
                                 cover={review.data.cover}
                                 genres={review.data.genres}
-                                href={`${import.meta.env.BASE_URL}reviews/${review.id
+                                href={`${base}reviews/${review.id
                                     .split("/")
                                     .map(encodeURIComponent)
                                     .join("/")}`}

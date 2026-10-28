@@ -10,7 +10,7 @@ const { review, blurb } = Astro.props;
 
 const { artist, title, score, cover, genres, year_rank } = review.data;
 
-const base = import.meta.env.BASE_URL;
+import { base } from "../paths";
 
 const coverUrl = cover ? `${base}images/albums/${cover}` : null;
 

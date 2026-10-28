@@ -8,7 +8,7 @@ import "../styles/archive.css";
 
 import AlbumCard from "../components/AlbumCard.astro";
 
-const base = import.meta.env.BASE_URL;
+import { base } from "../paths";
 
 const reviews = await getCollection(
     "reviews",

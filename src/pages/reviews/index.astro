@@ -11,7 +11,7 @@ const reviews = await getCollection(
 
 const sortedReviews = [...reviews].sort((a, b) => b.data.score - a.data.score);
 
-const base = import.meta.env.BASE_URL;
+import { base } from "../../paths";
 ---
 
 <BaseLayout title="The (Not) Reviews">
