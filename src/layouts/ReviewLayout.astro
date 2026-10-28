@@ -1,0 +1,130 @@
+---
+import type { CollectionEntry } from "astro:content";
+import BaseLayout from "./BaseLayout.astro";
+import { base } from "../paths";
+import "../styles/review.css";
+
+interface Props {
+    artist: string;
+    title: string;
+    score: number;
+    cover?: string;
+    genres?: string[];
+    standoutTracks?: CollectionEntry<"reviews">["data"]["standout_tracks"];
+}
+
+const {
+    artist,
+    title,
+    score,
+    cover,
+    genres = [],
+    standoutTracks = [],
+} = Astro.props;
+
+const trackLinks = standoutTracks.map((track) => {
+    const details = typeof track === "string" ? { title: track } : track;
+    const href =
+        details.url ??
+        `https://www.youtube.com/results?search_query=${encodeURIComponent(
+            `${artist} ${details.search_title ?? details.title} ${title}`,
+        )}`;
+    const hostname = new URL(href).hostname;
+    const isYouTube =
+        hostname === "youtu.be" ||
+        hostname === "youtube.com" ||
+        hostname.endsWith(".youtube.com");
+    const label = !details.url
+        ? "Find on YouTube"
+        : isYouTube
+          ? "YouTube"
+          : "Listen";
+
+    return {
+        title: details.title,
+        href,
+        label,
+        ariaLabel: `${label}: ${details.title} by ${artist} — ${title} (opens in a new tab)`,
+    };
+});
+
+const coverUrl = cover ? `${base}images/albums/${cover}` : null;
+---
+
+<BaseLayout title={`${artist} — ${title}`}>
+    <article class="review">
+        <header class="review-header">
+            <p class="eyebrow">
+                ALBUM REVIEW
+                {genres.length > 0 && ` / ${genres.join(", ")}`}
+            </p>
+
+            <h1>{title}</h1>
+            <p class="artist">{artist}</p>
+        </header>
+
+        <div class="review-hero">
+            <div class="artwork">
+                {coverUrl ? (
+                    <img
+                        src={coverUrl}
+                        alt={`Cover art for ${title} by ${artist}`}
+                        width="500"
+                        height="500"
+                    />
+                ) : (
+                    <div class="artwork-placeholder">
+                        <span>{title}</span>
+                        <small>{artist}</small>
+                    </div>
+                )}
+            </div>
+
+            <aside class="review-details">
+                <div>
+                    <p class="section-label">INITIAL THOUGHTS</p>
+
+                    <div class="score">
+                        <strong>{score.toFixed(1)}</strong>
+                        <span>OUT OF 10</span>
+                    </div>
+                </div>
+
+                {standoutTracks.length > 0 && (
+                    <section class="standouts">
+                        <h2 class="section-label">STANDOUT TRACKS</h2>
+
+                        <ol>
+                            {trackLinks.map((track) => (
+                                <li>
+                                    {track.title}{" "}
+                                    <a
+                                        class="standout-link"
+                                        href={track.href}
+                                        aria-label={track.ariaLabel}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        {track.label}{" "}
+                                        <span aria-hidden="true">↗</span>
+                                    </a>
+                                </li>
+                            ))}
+                        </ol>
+                    </section>
+                )}
+            </aside>
+        </div>
+
+        <section class="review-body">
+            <p class="eyebrow">THE REVIEW</p>
+            <div class="review-prose">
+                <slot />
+            </div>
+        </section>
+
+        <footer class="review-footer">
+            <a href={`${base}reviews/`}>← Back to reviews</a>
+        </footer>
+    </article>
+</BaseLayout>

@@ -1,0 +1,63 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+    review: CollectionEntry<"reviews">;
+}
+
+const { review } = Astro.props;
+const { artist, title, score, cover, genres, reviewed_on } = review.data;
+
+import { base } from "../paths";
+const coverUrl = cover ? `${base}images/albums/${cover}` : null;
+
+const reviewUrl = `${base}reviews/${review.id
+    .split("/")
+    .map(encodeURIComponent)
+    .join("/")}`;
+
+const formattedDate = reviewed_on.toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "UTC",
+});
+---
+
+<section class="featured-review" aria-labelledby="featured-heading">
+    <div class="featured-heading">
+        <p class="eyebrow">LATEST LISTEN</p>
+        <span class="featured-date">{formattedDate}</span>
+    </div>
+
+    <a href={reviewUrl} class="featured-link">
+        <div class="featured-artwork">
+            {coverUrl ? (
+                <img src={coverUrl} alt="" width="600" height="600" />
+            ) : (
+                <div class="featured-placeholder">
+                    <span>{title}</span>
+                    <small>{artist}</small>
+                </div>
+            )}
+        </div>
+
+        <div class="featured-info">
+            <div>
+                <p class="featured-genres">
+                    {genres.length > 0 ? genres.join(" / ") : "ALBUM REVIEW"}
+                </p>
+
+                <h2 id="featured-heading">{title}</h2>
+                <p class="featured-artist">{artist}</p>
+
+                <div class="featured-score">
+                    <strong>{score.toFixed(1)}</strong>
+                    <span>/ 10</span>
+                </div>
+            </div>
+
+            <span class="featured-read">READ THE REVIEW →</span>
+        </div>
+    </a>
+</section>

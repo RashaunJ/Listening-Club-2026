@@ -1,0 +1,374 @@
+
+.aoty-feature {
+  padding: 2rem 0 4rem;
+  border-top: 2px solid var(--color-text);
+}
+
+.aoty-intro {
+  margin-bottom: 2rem;
+}
+
+.aoty-intro h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  margin: 0.5rem 0;
+}
+
+.aoty-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+  gap: 3rem;
+  align-items: stretch;
+}
+
+.aoty-artwork {
+  aspect-ratio: 1;
+  background: #ded8ce;
+}
+
+.aoty-artwork img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aoty-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.aoty-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0.5rem 0;
+}
+
+.aoty-genres {
+  font-family: Arial, sans-serif;
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.aoty-details h3 {
+  font-family: Georgia, serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  margin: 0.75rem 0;
+}
+
+.aoty-artist {
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  color: var(--color-muted);
+  margin-bottom: 2rem;
+}
+
+.aoty-score {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color-text);
+  color: white;
+  padding: 1rem 1.5rem;
+}
+
+.aoty-score strong {
+  font-family: Arial, sans-serif;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.aoty-score span {
+  font-family: Arial, sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  margin-top: 0.5rem;
+}
+
+.aoty-review-link {
+  font-family: Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.aoty-review-link:hover {
+  text-decoration: underline;
+}
+
+.aoty-retrospective {
+  border-top: 1px solid var(--color-border);
+  margin-top: 3rem;
+  padding-top: 3rem;
+}
+
+.aoty-retrospective h3 {
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  margin: 0.5rem 0 2rem;
+}
+
+.aoty-prose {
+  max-width: 65ch;
+  font-size: 1.15rem;
+  line-height: 1.85;
+}
+
+.aoty-prose p {
+  margin: 0 0 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .aoty-hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .aoty-details {
+    gap: 1.5rem;
+  }
+
+  .aoty-prose {
+    font-size: 1.05rem;
+  }
+}
+.rankings-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.rankings-page > header {
+  padding: 2rem 0 4rem;
+}
+
+.rankings-page > header h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(3rem, 7vw, 5rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  margin: 0.75rem 0 1rem;
+}
+
+.rankings-page > header > p:last-child {
+  color: var(--color-muted);
+  font-size: 1.1rem;
+}
+
+.rankings-coming-soon {
+  padding: 5rem 2rem;
+  border-top: 2px solid var(--color-text);
+  text-align: center;
+}
+
+.rankings-coming-soon h2 {
+  font-family: Georgia, serif;
+  font-size: 2.5rem;
+}
+
+
+.rankings-list {
+  padding: 3rem 0 4rem;
+  border-top: 2px solid var(--color-text);
+}
+
+.rankings-list-header {
+  margin-bottom: 2.5rem;
+}
+
+.rankings-list-header h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  margin: 0.5rem 0;
+}
+
+.rankings-list-header > p:last-child {
+  color: var(--color-muted);
+}
+
+.ranked-album {
+  display: grid;
+  grid-template-columns: 75px 140px minmax(0, 1fr) 75px;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.ranked-position {
+  font-family: Georgia, serif;
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--color-accent);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.ranked-artwork {
+  aspect-ratio: 1;
+  background: #ded8ce;
+  overflow: hidden;
+}
+
+.ranked-artwork img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ranked-placeholder {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  font-family: Georgia, serif;
+}
+
+.ranked-details h3 {
+  font-family: Georgia, serif;
+  font-size: 1.8rem;
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+}
+
+.ranked-details h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ranked-details h3 a:hover {
+  color: var(--color-accent);
+}
+
+.ranked-artist {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  margin: 0 0 0.75rem;
+}
+
+.ranked-genres {
+  font-family: Arial, sans-serif;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-muted);
+  margin-bottom: 1rem;
+}
+
+.ranked-read {
+  font-family: Arial, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: var(--color-accent);
+}
+
+.ranked-read:hover {
+  text-decoration: underline;
+}
+
+.ranked-score {
+  justify-self: end;
+  align-self: start;
+  background: var(--color-text);
+  color: white;
+  padding: 0.7rem;
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 750px) {
+  .ranked-album {
+    grid-template-columns: 45px 100px minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  .ranked-position {
+    font-size: 2rem;
+  }
+
+  .ranked-details h3 {
+    font-size: 1.35rem;
+  }
+
+  .ranked-score {
+    grid-column: 3;
+    justify-self: start;
+    align-self: auto;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ranked-album {
+    grid-template-columns: 35px 75px minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+
+  .ranked-position {
+    font-size: 1.5rem;
+  }
+
+  .ranked-details h3 {
+    font-size: 1.15rem;
+  }
+
+  .ranked-genres {
+    font-size: 0.6rem;
+  }
+}
+
+
+.honorable-mentions {
+  border-top: 2px solid var(--color-text);
+  padding: 3rem 0 4rem;
+}
+
+.honorable-header {
+  margin-bottom: 2.5rem;
+}
+
+.honorable-header h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  margin: 0.5rem 0;
+}
+
+.honorable-header > p:last-child {
+  color: var(--color-muted);
+  max-width: 600px;
+}
+
+.ranked-blurb {
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.65;
+  color: var(--color-muted);
+  max-width: 55ch;
+  margin: 1rem 0;
+}

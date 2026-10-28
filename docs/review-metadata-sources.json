@@ -1,0 +1,729 @@
+{
+  "method": "Review dates come from filename suffixes, not release dates or filesystem timestamps. Exact album IDs from the cover provenance were queried via Apple or Deezer. More specific genres for 22 albums were selected from their Wikipedia album infoboxes. Equivalent catalog names were normalized for consistent tagging; other catalog categories were retained without inventing subgenres. Genre classifications are editorial and may vary by source.",
+  "albums": [
+    {
+      "review": "6LACK_Love is the new Gangsta_2026-05-22.md",
+      "artist": "6LACK",
+      "album": "Love is the New Gangsta",
+      "source": "https://itunes.apple.com/lookup?id=6769897654&entity=album&country=us",
+      "catalog_genres": [
+        "R&B/Soul"
+      ],
+      "genres": [
+        "R&B/Soul"
+      ],
+      "reviewed_on": "2026-05-22",
+      "date_source": "Filename suffix",
+      "genre_source": "https://itunes.apple.com/lookup?id=6769897654&entity=album&country=us"
+    },
+    {
+      "review": "A$AP Rocky_Don't Be Dumb_2026-03-03.md",
+      "artist": "A$AP Rocky",
+      "album": "Don't Be Dumb",
+      "source": "https://api.deezer.com/album/898573792",
+      "catalog_genres": [
+        "Rap/Hip Hop"
+      ],
+      "genres": [
+        "Hip-Hop/Rap"
+      ],
+      "reviewed_on": "2026-03-03",
+      "date_source": "Filename suffix",
+      "genre_source": "https://api.deezer.com/album/898573792"
+    },
+    {
+      "review": "Ali Farka Touré w- Ry Cooder_Talking Timbuktu_2026-05-01.md",
+      "artist": "Ali Farka Touré",
+      "album": "Talking Timbuktu (with Ry Cooder)",
+      "source": "https://itunes.apple.com/lookup?id=1528519970&entity=album&country=us",
+      "catalog_genres": [
+        "Worldwide"
+      ],
+      "genres": [
+        "Malian Folk"
+      ],
+      "reviewed_on": "2026-05-01",
+      "date_source": "Filename suffix",
+      "genre_source": "https://en.wikipedia.org/wiki/Talking_Timbuktu"
+    },
+    {
+      "review": "Anderson.Paak & Cordae_Heavy is the Crown_2026-10-23.md",
+      "artist": "Anderson .Paak & Cordae",
+      "album": "Heavy Is The Crown",
+      "source": "https://itunes.apple.com/lookup?id=6812869309&entity=album&country=us",
+      "catalog_genres": [
+        "Hip-Hop/Rap"
+      ],
+      "genres": [
+        "Hip-Hop/Rap"
+      ],
+      "reviewed_on": "2026-10-23",
+      "date_source": "Filename suffix",
+      "genre_source": "https://itunes.apple.com/lookup?id=6812869309&entity=album&country=us"
+    },
+    {
+      "review": "Aphex Twin_Selected Ambient Works 85-92_2026-02-13.md",
+      "artist": "Aphex Twin",
+      "album": "Selected Ambient Works 85-92",
+      "source": "https://itunes.apple.com/lookup?id=1668862636&entity=album&country=us",
+      "catalog_genres": [
+        "Electronic"
+      ],
+      "genres": [
+        "Ambient Techno",
+        "IDM",
+        "Electronica"
+      ],
+      "reviewed_on": "2026-02-13",
+      "date_source": "Filename suffix",
+      "genre_source": "https://en.wikipedia.org/wiki/Selected_Ambient_Works_85%E2%80%9392"
+    },
+    {
+      "review": "AZ Chike_No Rest for the Wicked_2026-10-17.md",
+      "artist": "AZ Chike",
+      "album": "No Rest for The Wicked",
+      "source": "https://itunes.apple.com/lookup?id=6813621669&entity=album&country=us",
+      "catalog_genres": [
+        "Hip-Hop/Rap"
+      ],
+      "genres": [
+        "Hip-Hop/Rap"
+      ],
+      "reviewed_on": "2026-10-17",
+      "date_source": "Filename suffix",
+      "genre_source": "https://itunes.apple.com/lookup?id=6813621669&entity=album&country=us"
+    },
+    {
+      "review": "Bjork_Homogenic_2026-03-03.md",
+      "artist": "Björk",
+      "album": "Homogenic",
+      "source": "https://api.deezer.com/album/400582",
+      "catalog_genres": [
+        "Pop"
+      ],
+      "genres": [
+        "Electronica",
+        "Trip Hop",
+        "Art Pop"
+      ],
+      "reviewed_on": "2026-03-03",
+      "date_source": "Filename suffix",
+      "genre_source": "https://en.wikipedia.org/wiki/Homogenic"
+    },
+    {
+      "review": "Black Flag_Damaged_2026-07-13.md",
+      "artist": "Black Flag",
+      "album": "Damaged",
+      "source": "https://api.deezer.com/album/165168",
+      "catalog_genres": [
+        "Alternative",
+        "Indie Rock",
+        "Rock",
+        "Hard Rock"
+      ],
+      "genres": [
+        "Hardcore Punk"
+      ],
+      "reviewed_on": "2026-07-13",
+      "date_source": "Filename suffix",
+      "genre_source": "https://en.wikipedia.org/wiki/Damaged_(Black_Flag_album)"
+    },
+    {
+      "review": "Black Sabbath_Paranoid_2026-08-27.md",
+      "artist": "Black Sabbath",
+      "album": "Paranoid",
+      "source": "https://itunes.apple.com/lookup?id=785232473&entity=album&country=us",
+      "catalog_genres": [
+        "Metal"
+      ],
+      "genres": [
+        "Metal"
+      ],
+      "reviewed_on": "2026-08-27",
+      "date_source": "Filename suffix",
+      "genre_source": "https://itunes.apple.com/lookup?id=785232473&entity=album&country=us"
+    },
+    {
+      "review": "Buena Vista Social Club_Self Titled_2026-04-23.md",
+      "artist": "Buena Vista Social Club",
+      "album": "Buena Vista Social Club",
+      "source": "https://itunes.apple.com/lookup?id=1716598034&entity=album&country=us",
+      "catalog_genres": [
+        "Worldwide"
+      ],
+      "genres": [
+        "Son Cubano",
+        "Bolero",
+        "Danzón"
+      ],
+      "reviewed_on": "2026-04-23",
+      "date_source": "Filename suffix",
+      "genre_source": "https://en.wikipedia.org/wiki/Buena_Vista_Social_Club_(album)"
+    },
+    {
+      "review": "Charles Mingus_The Black Saint and The Sinner Lady_2026-03-21.md",
+      "artist": "Charles Mingus",
+      "album": "The Black Saint and the Sinner Lady",
+      "source": "https://itunes.apple.com/lookup?id=1443280597&entity=album&country=us",
+      "catalog_genres": [
+        "Jazz"
+      ],
+      "genres": [
+        "Jazz"
+      ],
+      "reviewed_on": "2026-03-21",
+      "date_source": "Filename suffix",
+      "genre_source": "https://itunes.apple.com/lookup?id=1443280597&entity=album&country=us"
+    },
+    {
+      "review": "Chris Rainbow_White Trails_2026-04-18.md",
+      "artist": "Chris Rainbow",
+      "album": "White Trails (Expanded)",
+      "source": "https://itunes.apple.com/lookup?id=1397443847&entity=album&country=us",
+      "catalog_genres": [
+        "Pop"
+      ],
+      "genres": [
+        "Pop"
+      ],
+      "reviewed_on": "2026-04-18",
+      "date_source": "Filename suffix",
+      "genre_source": "https://itunes.apple.com/lookup?id=1397443847&entity=album&country=us"
+    },
+    {
+      "review": "Dahi_Black Boy Alternative_2026-10-21.md",
+      "artist": "Dahi",
+      "album": "Black Boy (Alternative)",
+      "source": "https://api.deezer.com/album/1012848561",
+      "catalog_genres": [
+        "Alternative",
+        "R&B"
+      ],
+      "genres": [
+        "Alternative",
+        "R&B/Soul"
+      ],
+      "reviewed_on": "2026-10-21",
+      "date_source": "Filename suffix",
+      "genre_source": "https://api.deezer.com/album/1012848561"
+    },
+    {
+      "review": "David Bowie_Low_2026-06-04.md",
+      "artist": "David Bowie",
+      "album": "Low (2017 Remaster)",
+      "source": "https://itunes.apple.com/lookup?id=1347895593&entity=album&country=us",
+      "catalog_genres": [
+        "Rock"
+      ],
+      "genres": [
+        "Art Rock",
+        "Electronic",
+        "Ambient"
+      ],
+      "reviewed_on": "2026-06-04",
+      "date_source": "Filename suffix",
+      "genre_source": "https://en.wikipedia.org/wiki/Low_(David_Bowie_album)"
+    },
+    {
+      "review": "Deftones_White Pony_2026-08-25.md",
+      "artist": "Deftones",
+      "album": "White Pony",
+      "source": "https://api.deezer.com/album/97368",
+      "catalog_genres": [
+        "Rock",
+        "Hard Rock"
+      ],
+      "genres": [
+        "Alternative Metal",
+        "Nu Metal"
+      ],
+      "reviewed_on": "2026-08-25",
+      "date_source": "Filename suffix",
+      "genre_source": "https://en.wikipedia.org/wiki/White_Pony"
+    },
+    {
+      "review": "Denzel Curry-Kenny Beats_null_2026-08-25.md",
+      "artist": "Denzel Curry",
+      "album": "ii",
+      "source": "https://api.deezer.com/album/1053829292",
+      "catalog_genres": [
+        "Rap/Hip Hop"
+      ],
+      "genres": [
+        "Hip-Hop/Rap"
+      ],
+      "reviewed_on": "2026-08-25",
+      "date_source": "Filename suffix",
+      "genre_source": "https://api.deezer.com/album/1053829292"
+    },
+    {
+      "review": "Denzel Curry_Strictly 4 The Scythe_2026-03-10.md",
+      "artist": "Denzel Curry",
+      "album": "Strictly 4 The Scythe",
+      "source": "https://api.deezer.com/album/949182351",
+      "catalog_genres": [
+        "Rap/Hip Hop"
+      ],
+      "genres": [
+        "Hip-Hop/Rap"
+      ],
+      "reviewed_on": "2026-03-10",
+      "date_source": "Filename suffix",
+      "genre_source": "https://api.deezer.com/album/949182351"
+    },
+    {
+      "review": "Drake_ICEMAN_2026-05-29.md",
+      "artist": "Drake",
+      "album": "ICEMAN",
+      "source": "https://itunes.apple.com/lookup?id=6769649287&entity=album&country=us",
+      "catalog_genres": [
+        "Hip-Hop"
+      ],
+      "genres": [
+        "Hip-Hop/Rap"
+      ],
+      "reviewed_on": "2026-05-29",
+      "date_source": "Filename suffix",
+      "genre_source": "https://itunes.apple.com/lookup?id=6769649287&entity=album&country=us"
+    },
+    {
+      "review": "Earl Sweatshirt-MIKE-Surf Gang_POMPEII-UTILITY_2026-04-03.md",
+      "artist": "Earl Sweatshirt",
+      "album": "POMPEII // UTILITY",
+      "source": "https://api.deezer.com/album/901991652",
+      "catalog_genres": [
+        "Rap/Hip Hop"
+      ],
+      "genres": [
+        "Hip-Hop/Rap"
+      ],
+      "reviewed_on": "2026-04-03",
+      "date_source": "Filename suffix",
+      "genre_source": "https://api.deezer.com/album/901991652"
+    },
+    {
+      "review": "Fela Kuti_Zombie_2026-04-08.md",
+      "artist": "Fela Kuti",
+      "album": "Zombie",
+      "source": "https://itunes.apple.com/lookup?id=559710299&entity=album&country=us",
+      "catalog_genres": [
+        "Afro-Beat"
+      ],
+      "genres": [
+        "Afrobeat"
+      ],
+      "reviewed_on": "2026-04-08",
+      "date_source": "Filename suffix",
+      "genre_source": "https://itunes.apple.com/lookup?id=559710299&entity=album&country=us"
+    },
+    {
+      "review": "Femtanyl_MAN BITES DOG_2026-06-25.md",
+      "artist": "femtanyl",
+      "album": "MAN BITES DOG",
+      "source": "https://api.deezer.com/album/916601421",
+      "catalog_genres": [
+        "Electro"
+      ],
+      "genres": [
+        "Electronic"
+      ],
+      "reviewed_on": "2026-06-25",
+      "date_source": "Filename suffix",
+      "genre_source": "https://api.deezer.com/album/916601421"
+    },
+    {
+      "review": "Herbie Hancock_Head Hunters_2026-03-25.md",
+      "artist": "Herbie Hancock",
+      "album": "Head Hunters",
+      "source": "https://itunes.apple.com/lookup?id=158571524&entity=album&country=us",
+      "catalog_genres": [
+        "Jazz"
+      ],
+      "genres": [
+        "Jazz-Funk",
+        "Jazz Fusion"
+      ],
+      "reviewed_on": "2026-03-25",
+      "date_source": "Filename suffix",
+      "genre_source": "https://en.wikipedia.org/wiki/Head_Hunters"
+    },
+    {
+      "review": "Isaiah Rashad_ITS BEEN AWFUL_2026-10-15.md",
+      "artist": "Isaiah Rashad",
+      "album": "IT'S BEEN AWFUL",
+      "source": "https://itunes.apple.com/lookup?id=1893464553&entity=album&country=us",
+      "catalog_genres": [
+        "Hip-Hop/Rap"
+      ],
+      "genres": [
+        "Hip-Hop/Rap"
+      ],
+      "reviewed_on": "2026-10-15",
+      "date_source": "Filename suffix",
+      "genre_source": "https://itunes.apple.com/lookup?id=1893464553&entity=album&country=us"
+    },
+    {
+      "review": "John Coltrane_A Love Supreme_2026-03-17.md",
+      "artist": "John Coltrane",
+      "album": "A Love Supreme",
+      "source": "https://itunes.apple.com/lookup?id=1440713018&entity=album&country=us",
+      "catalog_genres": [
+        "Jazz"
+      ],
+      "genres": [
+        "Modal Jazz",
+        "Post-Bop",
+        "Spiritual Jazz"
+      ],
+      "reviewed_on": "2026-03-17",
+      "date_source": "Filename suffix",
+      "genre_source": "https://en.wikipedia.org/wiki/A_Love_Supreme"
+    },
+    {
+      "review": "Joji_Pissing in the Wind_2026-02-09.md",
+      "artist": "Joji",
+      "album": "Piss In The Wind",
+      "source": "https://api.deezer.com/album/847338002",
+      "catalog_genres": [
+        "Alternative"
+      ],
+      "genres": [
+        "Alternative"
+      ],
+      "reviewed_on": "2026-02-09",
+      "date_source": "Filename suffix",
+      "genre_source": "https://api.deezer.com/album/847338002"
+    },
+    {
+      "review": "JPEGMAFIA_Experimental Rap_2026-05-22.md",
+      "artist": "JPEGMAFIA",
+      "album": "EXPERIMENTAL RAP",
+      "source": "https://api.deezer.com/album/1007117181",
+      "catalog_genres": [
+        "Rap/Hip Hop"
+      ],
+      "genres": [
+        "Hip-Hop/Rap"
+      ],
+      "reviewed_on": "2026-05-22",
+      "date_source": "Filename suffix",
+      "genre_source": "https://api.deezer.com/album/1007117181"
+    },
+    {
+      "review": "Kendrick Lamar_Damn_2026-02-10.md",
+      "artist": "Kendrick Lamar",
+      "album": "DAMN.",
+      "source": "https://itunes.apple.com/lookup?id=1440881722&entity=album&country=us",
+      "catalog_genres": [
+        "Hip-Hop/Rap"
+      ],
+      "genres": [
+        "Hip-Hop/Rap"
+      ],
+      "reviewed_on": "2026-02-10",
+      "date_source": "Filename suffix",
+      "genre_source": "https://itunes.apple.com/lookup?id=1440881722&entity=album&country=us"
+    },
+    {
+      "review": "Kenny Mason_BULLDAWG_2026-05-18.md",
+      "artist": "Kenny Mason",
+      "album": "BULLDAWG",
+      "source": "https://api.deezer.com/album/963932621",
+      "catalog_genres": [
+        "Rap/Hip Hop"
+      ],
+      "genres": [
+        "Hip-Hop/Rap"
+      ],
+      "reviewed_on": "2026-05-18",
+      "date_source": "Filename suffix",
+      "genre_source": "https://api.deezer.com/album/963932621"
+    },
+    {
+      "review": "King Crimson_In the Court of the Crimson King_2026-06-25.md",
+      "artist": "King Crimson",
+      "album": "In the Court of the Crimson King (Expanded Edition)",
+      "source": "https://itunes.apple.com/lookup?id=918534711&entity=album&country=us",
+      "catalog_genres": [
+        "Prog-Rock/Art Rock"
+      ],
+      "genres": [
+        "Prog-Rock/Art Rock"
+      ],
+      "reviewed_on": "2026-06-25",
+      "date_source": "Filename suffix",
+      "genre_source": "https://itunes.apple.com/lookup?id=918534711&entity=album&country=us"
+    },
+    {
+      "review": "Masego_Fix Your Face_2026-07-22.md",
+      "artist": "Masego",
+      "album": "Fix Your Face",
+      "source": "https://itunes.apple.com/lookup?id=6791395220&entity=album&country=us",
+      "catalog_genres": [
+        "R&B/Soul"
+      ],
+      "genres": [
+        "R&B/Soul"
+      ],
+      "reviewed_on": "2026-07-22",
+      "date_source": "Filename suffix",
+      "genre_source": "https://itunes.apple.com/lookup?id=6791395220&entity=album&country=us"
+    },
+    {
+      "review": "Massive Attack_Mezzanine_2026-02-23.md",
+      "artist": "Massive Attack",
+      "album": "Mezzanine",
+      "source": "https://itunes.apple.com/lookup?id=724466069&entity=album&country=us",
+      "catalog_genres": [
+        "Electronic"
+      ],
+      "genres": [
+        "Trip Hop",
+        "Electronica"
+      ],
+      "reviewed_on": "2026-02-23",
+      "date_source": "Filename suffix",
+      "genre_source": "https://en.wikipedia.org/wiki/Mezzanine_(album)"
+    },
+    {
+      "review": "Metallica_Master of Puppets_2026-09-17.md",
+      "artist": "Metallica",
+      "album": "Master of Puppets (Remastered)",
+      "source": "https://api.deezer.com/album/51188172",
+      "catalog_genres": [
+        "Rock",
+        "Metal"
+      ],
+      "genres": [
+        "Thrash Metal"
+      ],
+      "reviewed_on": "2026-09-17",
+      "date_source": "Filename suffix",
+      "genre_source": "https://en.wikipedia.org/wiki/Master_of_Puppets"
+    },
+    {
+      "review": "Miles Davis_In a Silent Way_2026-03-09.md",
+      "artist": "Miles Davis",
+      "album": "In a Silent Way",
+      "source": "https://itunes.apple.com/lookup?id=193603857&entity=album&country=us",
+      "catalog_genres": [
+        "Jazz"
+      ],
+      "genres": [
+        "Jazz Fusion",
+        "Jazz Rock"
+      ],
+      "reviewed_on": "2026-03-09",
+      "date_source": "Filename suffix",
+      "genre_source": "https://en.wikipedia.org/wiki/In_a_Silent_Way"
+    },
+    {
+      "review": "Miles Davis_Kind of Blue Legacy Edition_2026-03-10.md",
+      "artist": "Miles Davis",
+      "album": "Kind of Blue (Legacy Edition)",
+      "source": "https://itunes.apple.com/lookup?id=300865074&entity=album&country=us",
+      "catalog_genres": [
+        "Jazz"
+      ],
+      "genres": [
+        "Modal Jazz"
+      ],
+      "reviewed_on": "2026-03-10",
+      "date_source": "Filename suffix",
+      "genre_source": "https://en.wikipedia.org/wiki/Kind_of_Blue"
+    },
+    {
+      "review": "Nusrat Fateh Ali Khan_Mustt Mustt Real World Gold_2026-05-08.md",
+      "artist": "Nusrat Fateh Ali Khan",
+      "album": "Mustt Mustt (Real World Gold)",
+      "source": "https://itunes.apple.com/lookup?id=1653379088&entity=album&country=us",
+      "catalog_genres": [
+        "Worldwide"
+      ],
+      "genres": [
+        "Qawwali",
+        "World Fusion"
+      ],
+      "reviewed_on": "2026-05-08",
+      "date_source": "Filename suffix",
+      "genre_source": "https://en.wikipedia.org/wiki/Mustt_Mustt"
+    },
+    {
+      "review": "Pink Floyd_Wish you Were Here_2026-06-17.md",
+      "artist": "Pink Floyd",
+      "album": "Wish You Were Here",
+      "source": "https://itunes.apple.com/lookup?id=1065973975&entity=album&country=us",
+      "catalog_genres": [
+        "Rock"
+      ],
+      "genres": [
+        "Progressive Rock",
+        "Art Rock"
+      ],
+      "reviewed_on": "2026-06-17",
+      "date_source": "Filename suffix",
+      "genre_source": "https://en.wikipedia.org/wiki/Wish_You_Were_Here_(Pink_Floyd_album)"
+    },
+    {
+      "review": "Radiohead_Kid A_2026-02-17.md",
+      "artist": "Radiohead",
+      "album": "Kid A",
+      "source": "https://itunes.apple.com/lookup?id=1097862870&entity=album&country=us",
+      "catalog_genres": [
+        "Alternative"
+      ],
+      "genres": [
+        "Electronica",
+        "Experimental Rock",
+        "Art Rock"
+      ],
+      "reviewed_on": "2026-02-17",
+      "date_source": "Filename suffix",
+      "genre_source": "https://en.wikipedia.org/wiki/Kid_A"
+    },
+    {
+      "review": "SIDESHOW_Tigray Funk_2026-06-04.md",
+      "artist": "Sideshow",
+      "album": "TIGRAY FUNK",
+      "source": "https://api.deezer.com/album/900426882",
+      "catalog_genres": [
+        "Rap/Hip Hop"
+      ],
+      "genres": [
+        "Hip-Hop/Rap"
+      ],
+      "reviewed_on": "2026-06-04",
+      "date_source": "Filename suffix",
+      "genre_source": "https://api.deezer.com/album/900426882"
+    },
+    {
+      "review": "Slayer_Reign In Blood_2026-09-21.md",
+      "artist": "Slayer",
+      "album": "Reign In Blood",
+      "source": "https://api.deezer.com/album/572338011",
+      "catalog_genres": [
+        "Metal"
+      ],
+      "genres": [
+        "Thrash Metal"
+      ],
+      "reviewed_on": "2026-09-21",
+      "date_source": "Filename suffix",
+      "genre_source": "https://en.wikipedia.org/wiki/Reign_in_Blood"
+    },
+    {
+      "review": "Sonic Youth_Daydream Nation_2026-07-29.md",
+      "artist": "Sonic Youth",
+      "album": "Daydream Nation (Deluxe Edition)",
+      "source": "https://itunes.apple.com/lookup?id=520335802&entity=album&country=us",
+      "catalog_genres": [
+        "Alternative"
+      ],
+      "genres": [
+        "Noise Rock",
+        "Indie Rock",
+        "Art Punk"
+      ],
+      "reviewed_on": "2026-07-29",
+      "date_source": "Filename suffix",
+      "genre_source": "https://en.wikipedia.org/wiki/Daydream_Nation"
+    },
+    {
+      "review": "Swans_To Be Kind_2026-08-12.md",
+      "artist": "Swans",
+      "album": "To Be Kind",
+      "source": "https://api.deezer.com/album/7729069",
+      "catalog_genres": [
+        "Alternative"
+      ],
+      "genres": [
+        "Experimental Rock",
+        "Noise Rock",
+        "Drone"
+      ],
+      "reviewed_on": "2026-08-12",
+      "date_source": "Filename suffix",
+      "genre_source": "https://en.wikipedia.org/wiki/To_Be_Kind"
+    },
+    {
+      "review": "Talking Heads_Remain In Light_2026-05-28.md",
+      "artist": "Talking Heads",
+      "album": "Remain In Light",
+      "source": "https://itunes.apple.com/lookup?id=300948043&entity=album&country=us",
+      "catalog_genres": [
+        "Alternative"
+      ],
+      "genres": [
+        "New Wave",
+        "Post-Punk",
+        "Funk Rock"
+      ],
+      "reviewed_on": "2026-05-28",
+      "date_source": "Filename suffix",
+      "genre_source": "https://en.wikipedia.org/wiki/Remain_in_Light"
+    },
+    {
+      "review": "Tame Impala_The Slow Rush_2026-02-09.md",
+      "artist": "Tame Impala",
+      "album": "The Slow Rush",
+      "source": "https://itunes.apple.com/lookup?id=1497230760&entity=album&country=us",
+      "catalog_genres": [
+        "Alternative"
+      ],
+      "genres": [
+        "Psychedelic Pop",
+        "Disco",
+        "Electropop"
+      ],
+      "reviewed_on": "2026-02-09",
+      "date_source": "Filename suffix",
+      "genre_source": "https://en.wikipedia.org/wiki/The_Slow_Rush"
+    },
+    {
+      "review": "The Clash_London Calling_2026-07-01.md",
+      "artist": "The Clash",
+      "album": "London Calling (Expanded Edition)",
+      "source": "https://itunes.apple.com/lookup?id=267986379&entity=album&country=us",
+      "catalog_genres": [
+        "Punk"
+      ],
+      "genres": [
+        "Punk"
+      ],
+      "reviewed_on": "2026-07-01",
+      "date_source": "Filename suffix",
+      "genre_source": "https://itunes.apple.com/lookup?id=267986379&entity=album&country=us"
+    },
+    {
+      "review": "Thundercat_Distracted_2026-04-06.md",
+      "artist": "Thundercat",
+      "album": "Distracted",
+      "source": "https://api.deezer.com/album/909026472",
+      "catalog_genres": [
+        "R&B"
+      ],
+      "genres": [
+        "R&B/Soul"
+      ],
+      "reviewed_on": "2026-04-06",
+      "date_source": "Filename suffix",
+      "genre_source": "https://api.deezer.com/album/909026472"
+    },
+    {
+      "review": "Tinariwen_Elwan_2026-02-23.md",
+      "artist": "Tinariwen",
+      "album": "Elwan",
+      "source": "https://itunes.apple.com/lookup?id=1485064413&entity=album&country=us",
+      "catalog_genres": [
+        "Worldwide"
+      ],
+      "genres": [
+        "Desert Blues",
+        "African Blues"
+      ],
+      "reviewed_on": "2026-02-23",
+      "date_source": "Filename suffix",
+      "genre_source": "https://en.wikipedia.org/wiki/Elwan"
+    }
+  ]
+}

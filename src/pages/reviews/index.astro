@@ -1,0 +1,111 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AlbumCard from "../../components/AlbumCard.astro";
+import { getCollection } from "astro:content";
+import "../../styles/archive.css";
+
+const reviews = await getCollection(
+    "reviews",
+    ({ data }) => data.status === "published",
+);
+
+const sortedReviews = [...reviews].sort((a, b) => b.data.score - a.data.score);
+
+import { base } from "../../paths";
+---
+
+<BaseLayout title="The (Not) Reviews">
+    <div class="archive">
+        <header class="archive-header">
+            <p class="eyebrow">THE LISTENING ARCHIVE</p>
+            <h1>The (Not) Reviews.</h1>
+            <p class="archive-description">
+                The goal was at minimum try one new album a week. Sometimes we
+                got to more than one. Occasionally life got in the way. These
+                are less reviews and more what I was thinking after the first
+                few listens.
+            </p>
+        </header>
+
+        <div class="archive-toolbar">
+            <span class="archive-count">{reviews.length} ALBUMS REVIEWED</span>
+
+            <label>
+                Sort by:
+                <label for="sort-reviews">Sort by:</label>
+                <select id="sort-reviews" class="archive-sort">
+                    <option value="score-desc">Highest Rated</option>
+                    <option value="score-asc">Lowest Rated</option>
+                    <option value="artist">Artist A–Z</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="album-grid" id="album-grid">
+            {sortedReviews.map((review) => (
+                <AlbumCard
+                    artist={review.data.artist}
+                    title={review.data.title}
+                    score={review.data.score}
+                    cover={review.data.cover}
+                    genres={review.data.genres}
+                    href={`${base}reviews/${review.id.split("/").map(encodeURIComponent).join("/")}`}
+                />
+            ))}
+        </div>
+    </div>
+</BaseLayout>
+
+<script>
+    const sortSelect = document.querySelector("#sort-reviews");
+    const grid = document.querySelector("#album-grid");
+
+    if (
+        sortSelect instanceof HTMLSelectElement &&
+        grid instanceof HTMLElement
+    ) {
+        sortSelect.addEventListener("change", () => {
+            // Get all the album cards currently in the grid
+            const cards = Array.from(grid.querySelectorAll(".album-card"));
+
+            // Determine which sorting method was selected
+            const sortBy = sortSelect.value;
+
+            cards.sort((a, b) => {
+                const scoreA = Number(a.dataset.score);
+                const scoreB = Number(b.dataset.score);
+
+                switch (sortBy) {
+                    case "score-desc":
+                        return scoreB - scoreA;
+
+                    case "score-asc":
+                        return scoreA - scoreB;
+
+                    case "artist":
+                        return (a.dataset.artist ?? "").localeCompare(
+                            b.dataset.artist ?? "",
+                        );
+
+                    case "week": {
+                        const weekA = a.dataset.week
+                            ? Number(a.dataset.week)
+                            : Infinity;
+
+                        const weekB = b.dataset.week
+                            ? Number(b.dataset.week)
+                            : Infinity;
+
+                        return weekA - weekB;
+                    }
+
+                    default:
+                        return 0;
+                }
+            });
+
+            // Reinsert cards in their new order
+            grid.replaceChildren(...cards);
+        });
+    }
+</script>

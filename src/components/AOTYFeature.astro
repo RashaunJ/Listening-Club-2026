@@ -1,0 +1,73 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+    review: CollectionEntry<"reviews">;
+}
+
+const { review } = Astro.props;
+const { artist, title, score, cover, genres } = review.data;
+
+import { base } from "../paths";
+
+const coverUrl = cover ? `${base}images/albums/${cover}` : null;
+
+const reviewUrl = `${base}reviews/${review.id
+    .split("/")
+    .map(encodeURIComponent)
+    .join("/")}`;
+---
+
+<section class="aoty-feature" aria-labelledby="aoty-heading">
+    <div class="aoty-intro">
+        <p class="eyebrow">NO. 01 — ALBUM OF THE YEAR</p>
+        <h2 id="aoty-heading">The Tiger That Found its Fangs</h2>
+    </div>
+
+    <div class="aoty-hero">
+        <div class="aoty-artwork">
+            {coverUrl ? (
+                <img
+                    src={coverUrl}
+                    alt={`Cover art for ${title} by ${artist}`}
+                    width="600"
+                    height="600"
+                />
+            ) : (
+                <div class="aoty-placeholder">
+                    <span>{title}</span>
+                    <small>{artist}</small>
+                </div>
+            )}
+        </div>
+
+        <div class="aoty-details">
+            <div>
+                <p class="aoty-genres">
+                    {genres.length > 0 ? genres.join(" / ") : "ALBUM REVIEW"}
+                </p>
+
+                <h3>{title}</h3>
+                <p class="aoty-artist">{artist}</p>
+
+                <div class="aoty-score">
+                    <strong>{score.toFixed(1)}</strong>
+                    <span>OUT OF 10</span>
+                </div>
+            </div>
+
+            <a href={reviewUrl} class="aoty-review-link">
+                READ ORIGINAL REVIEW →
+            </a>
+        </div>
+    </div>
+
+    <div class="aoty-retrospective">
+        <p class="eyebrow">THE CLOSING ARGUMENT</p>
+        <h3>Why this record won.</h3>
+
+        <div class="aoty-prose">
+            <slot />
+        </div>
+    </div>
+</section>

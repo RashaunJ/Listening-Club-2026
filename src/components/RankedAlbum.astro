@@ -1,0 +1,64 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+    review: CollectionEntry<"reviews">;
+    blurb?: string;
+}
+
+const { review, blurb } = Astro.props;
+
+const { artist, title, score, cover, genres, year_rank } = review.data;
+
+import { base } from "../paths";
+
+const coverUrl = cover ? `${base}images/albums/${cover}` : null;
+
+const reviewUrl = `${base}reviews/${review.id
+    .split("/")
+    .map(encodeURIComponent)
+    .join("/")}`;
+
+if (year_rank == null) {
+    throw new Error(`Missing year_rank for ${review.id}`);
+}
+
+const displayRank = String(year_rank).padStart(2, "0");
+---
+
+<article class="ranked-album">
+    <div class="ranked-position">{displayRank}</div>
+
+    <div class="ranked-artwork">
+        {coverUrl ? (
+            <img
+                src={coverUrl}
+                alt={`Cover art for ${title} by ${artist}`}
+                width="160"
+                height="160"
+                loading="lazy"
+            />
+        ) : (
+            <div class="ranked-placeholder">
+                <span>{title}</span>
+            </div>
+        )}
+    </div>
+
+    <div class="ranked-details">
+        <h3>
+            <a href={reviewUrl}>{title}</a>
+        </h3>
+
+        <p class="ranked-artist">{artist}</p>
+
+        {genres.length > 0 && <p class="ranked-genres">{genres.join(" / ")}</p>}
+
+        {blurb && <p class="ranked-blurb">{blurb}</p>}
+        <a href={reviewUrl} class="ranked-read">
+            READ REVIEW →
+        </a>
+    </div>
+
+    <div class="ranked-score">{score.toFixed(1)}</div>
+</article>

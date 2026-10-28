@@ -1,0 +1,53 @@
+---
+import { base } from "../paths";
+
+interface Props {
+    artist: string;
+    title: string;
+    score: number;
+    href: string;
+    cover?: string;
+    genres?: string[];
+}
+
+const { artist, title, score, href, cover, genres = [] } = Astro.props;
+
+const coverUrl = cover ? `${base}images/albums/${cover}` : null;
+---
+
+<article
+    class="album-card"
+    data-score={score}
+    data-artist={artist}
+    data-title={title}
+>
+    <a href={href} class="album-card-link">
+        <div class="album-card-artwork">
+            {coverUrl ? (
+                <img
+                    src={coverUrl}
+                    alt=""
+                    loading="lazy"
+                    width="400"
+                    height="400"
+                />
+            ) : (
+                <div class="album-card-placeholder">
+                    <span>{title}</span>
+                </div>
+            )}
+        </div>
+
+        <div class="album-card-info">
+            {genres.length > 0 && <p class="album-card-genre">{genres[0]}</p>}
+
+            <h2>{title}</h2>
+            <p class="album-card-artist">{artist}</p>
+
+            <span class="album-card-score">
+                {score.toFixed(1)}
+                <small>/ 10</small>
+            </span>
+        </div>
+    </a>
+</article>

@@ -1,0 +1,130 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import { rankings } from "../../data/rankings";
+import { base } from "../../paths";
+import AOTYFeature from "../../components/AOTYFeature.astro";
+import AOTYRetrospective from "../../content/editorials/aoty-2026.md";
+import "../../styles/rankings.css";
+import RankedAlbum from "../../components/RankedAlbum.astro";
+import AlbumCard from "../../components/AlbumCard.astro";
+import "../../styles/archive.css";
+
+// Load published reviews
+const reviews = await getCollection(
+    "reviews",
+    ({ data }) => data.status === "published",
+);
+
+// Select only albums with a year_rank
+const rankedReviews = reviews
+    .filter((review) => review.data.year_rank != null)
+    .sort((a, b) => a.data.year_rank! - b.data.year_rank!);
+
+// Validate duplicate ranks
+const ranks = rankedReviews.map((review) => review.data.year_rank);
+
+if (new Set(ranks).size !== ranks.length) {
+    throw new Error("Duplicate year_rank values detected!");
+}
+
+// Select Album of the Year
+const albumOfTheYear = rankedReviews.find(
+    (review) => review.data.year_rank === 1,
+);
+
+// Everything except AOTY
+const remainingRankings = rankedReviews.filter(
+    (review) => review.data.year_rank !== 1,
+);
+
+// Resolve honorable mentions
+const reviewMap = new Map(reviews.map((review) => [review.id, review]));
+
+const honorableMentions = rankings.honorableMentions
+    .map((id) => reviewMap.get(id))
+    .filter((review) => review !== undefined);
+---
+
+<BaseLayout title="Rankings">
+    <h1>{rankings.headline}</h1>
+    <p>{rankings.subtitle}</p>
+
+    {rankings.published ? (
+        <>
+            <h2>Album of the Year</h2>
+            <!--
+            {albumOfTheYear ? (
+                <div>
+                    <h3>{albumOfTheYear.data.title}</h3>
+                    <p>{albumOfTheYear.data.artist}</p>
+                    <p>Score: {albumOfTheYear.data.score}/10</p>
+                </div>
+            ) : (
+                <p>No Album of the Year selected yet.</p>
+            )} -->
+            {albumOfTheYear ? (
+                <AOTYFeature review={albumOfTheYear}>
+                    <AOTYRetrospective />
+                </AOTYFeature>
+            ) : (
+                <p>No Album of the Year selected yet.</p>
+            )}
+
+            <h2>Other Rankings</h2>
+
+            <section class="rankings-list" aria-labelledby="top-ten-heading">
+                <header class="rankings-list-header">
+                    <p class="eyebrow">THE REST OF THE BEST</p>
+                    <h2 id="top-ten-heading">The Top 10.</h2>
+                    <p>The earworms that earned spots of my playlists.</p>
+                </header>
+
+                <div>
+                    {remainingRankings.map((review) => (
+                        <RankedAlbum
+                            review={review}
+                            blurb={rankings.blurbs[review.id]}
+                        />
+                    ))}
+                </div>
+            </section>
+
+            {honorableMentions.length > 0 && (
+                <section class="honorable-mentions">
+                    <header class="honorable-header">
+                        <h2>Honorable Mentions</h2>
+                        <p>
+                            Records that fell outside my Top 10, but still
+                            deserve a shout out.
+                        </p>
+                    </header>
+
+                    <div class="album-grid">
+                        {honorableMentions.map((review) => (
+                            <AlbumCard
+                                artist={review.data.artist}
+                                title={review.data.title}
+                                score={review.data.score}
+                                cover={review.data.cover}
+                                genres={review.data.genres}
+                                href={`${base}reviews/${review.id
+                                    .split("/")
+                                    .map(encodeURIComponent)
+                                    .join("/")}`}
+                            />
+                        ))}
+                    </div>
+                </section>
+            )}
+        </>
+    ) : (
+        <section>
+            <h2>Rankings Coming Soon</h2>
+            <p>
+                The listening experiment isn't over yet. Check back for the
+                final verdict.
+            </p>
+        </section>
+    )}
+</BaseLayout>
