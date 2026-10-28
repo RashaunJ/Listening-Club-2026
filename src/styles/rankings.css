@@ -10,6 +10,7 @@
 
 .aoty-intro h2 {
   font-family: Georgia, serif;
+  font-style: italic;
   font-size: clamp(2.5rem, 5vw, 4rem);
   line-height: 1.1;
   letter-spacing: -0.04em;
@@ -82,7 +83,7 @@
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  background: var(--color-text);
+  background: var(--color-accent);
   color: white;
   padding: 1rem 1.5rem;
 }
