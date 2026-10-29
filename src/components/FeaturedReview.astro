@@ -11,7 +11,7 @@ const { artist, title, score, cover, genres, reviewed_on } = review.data;
 import { base } from "../paths";
 const coverUrl = cover ? `${base}images/albums/${cover}` : null;
 
-const reviewUrl = `${base}reviews/${review.id
+const reviewUrl = `${base}archive/${review.id
     .split("/")
     .map(encodeURIComponent)
     .join("/")}`;

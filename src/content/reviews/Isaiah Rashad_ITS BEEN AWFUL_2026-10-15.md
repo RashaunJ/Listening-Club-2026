@@ -12,7 +12,6 @@ standout_tracks:
     url: "https://www.youtube.com/watch?v=b2BrsALw0jA"
   - title: "Do I look High?"
     url: "https://www.youtube.com/watch?v=5cKWpQ6CjdI"
-  - "Packed Up"
 status: "published"
 cover: "isaiah-rashad-its-been-awful.jpg"
 ---

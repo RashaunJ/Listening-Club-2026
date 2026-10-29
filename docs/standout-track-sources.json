@@ -608,15 +608,7 @@
       "channel": "isaiah rashad",
       "verification": "Watch-page metadata returned the matching recording and playability status OK."
     },
-    {
-      "review": "Isaiah Rashad_ITS BEEN AWFUL_2026-10-15.md",
-      "artist": "Isaiah Rashad",
-      "album": "ITS BEEN AWFUL",
-      "track": "Packed Up",
-      "search_url": "https://www.youtube.com/results?search_query=Isaiah+Rashad+Packed+Up",
-      "verification": "Unresolved; rendered as Find on YouTube.",
-      "note": "No confidently matching recording found; retain a clearly labeled YouTube search link."
-    },
+
     {
       "review": "John Coltrane_A Love Supreme_2026-03-17.md",
       "artist": "John Coltrane",
