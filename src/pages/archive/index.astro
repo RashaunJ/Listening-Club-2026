@@ -49,7 +49,7 @@ import { base } from "../../paths";
                     score={review.data.score}
                     cover={review.data.cover}
                     genres={review.data.genres}
-                    href={`${base}reviews/${review.id.split("/").map(encodeURIComponent).join("/")}`}
+                    href={`${base}archive/${review.id.split("/").map(encodeURIComponent).join("/")}`}
                 />
             ))}
         </div>

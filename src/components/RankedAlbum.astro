@@ -14,7 +14,7 @@ import { base } from "../paths";
 
 const coverUrl = cover ? `${base}images/albums/${cover}` : null;
 
-const reviewUrl = `${base}reviews/${review.id
+const reviewUrl = `${base}archive/${review.id
     .split("/")
     .map(encodeURIComponent)
     .join("/")}`;
