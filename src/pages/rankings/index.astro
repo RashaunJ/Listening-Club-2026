@@ -4,7 +4,9 @@ import { getCollection } from "astro:content";
 import { rankings } from "../../data/rankings";
 import { base } from "../../paths";
 import AOTYFeature from "../../components/AOTYFeature.astro";
-import AOTYRetrospective from "../../content/editorials/aoty-2026.md";
+import AOTYRetrospective, {
+    frontmatter as aotyFrontmatter,
+} from "../../content/editorials/aoty-2026.md";
 import "../../styles/rankings.css";
 import RankedAlbum from "../../components/RankedAlbum.astro";
 import AlbumCard from "../../components/AlbumCard.astro";
@@ -63,7 +65,38 @@ const honorableMentions = rankings.honorableMentions
             ) : (
                 <p>No Album of the Year selected yet.</p>
             )} -->
-            {albumOfTheYear ? (
+            {aotyFrontmatter.status !== "published" ? (
+                <section
+                    class="aoty-feature"
+                    aria-labelledby="aoty-teaser-heading"
+                >
+                    <div class="aoty-hero aoty-teaser">
+                        <div class="aoty-sealed-cover" aria-hidden="true">
+                            <span class="aoty-sealed-number">01</span>
+                        </div>
+                        <div class="aoty-teaser-copy">
+                            <div class="aoty-intro">
+                                <p class="eyebrow">
+                                    NO. 01 — REVEAL COMING SOON
+                                </p>
+                                <h2 id="aoty-teaser-heading">
+                                    The top spot is still under wraps.
+                                </h2>
+                            </div>
+                            <div class="aoty-redacted-lines" aria-hidden="true">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <p class="aoty-prose">
+                                I'll drop my album of the year around the time
+                                Spotify Wrapped comes out. Until then, explore
+                                the rest of the rankings and the honorable
+                                mentions below.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            ) : albumOfTheYear ? (
                 <AOTYFeature review={albumOfTheYear}>
                     <AOTYRetrospective />
                 </AOTYFeature>
