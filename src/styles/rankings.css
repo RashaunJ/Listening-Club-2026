@@ -24,6 +24,61 @@
   align-items: stretch;
 }
 
+.aoty-teaser {
+  align-items: center;
+}
+
+.aoty-sealed-cover {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  overflow: hidden;
+  isolation: isolate;
+  background: #111;
+  color: #f4eee4;
+  box-shadow: inset 0 0 0 1px #ffffff20;
+}
+
+.aoty-sealed-cover::before {
+  content: "";
+  position: absolute;
+  inset: 12%;
+  z-index: -1;
+  background: radial-gradient(ellipse at 30% 35%, #8a6447, transparent 60%),
+    radial-gradient(ellipse at 75% 70%, #43534f, transparent 55%);
+  filter: blur(35px);
+  opacity: 0.65;
+}
+
+.aoty-sealed-number {
+  font-family: Georgia, serif;
+  font-size: clamp(7rem, 20vw, 15rem);
+  font-style: italic;
+  line-height: 1;
+  letter-spacing: -0.08em;
+  opacity: 0.16;
+  filter: blur(3px);
+}
+
+
+.aoty-redacted-lines {
+  display: grid;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.aoty-redacted-lines span {
+  height: 1rem;
+  width: 75%;
+  background: var(--color-text);
+  transform: rotate(-1deg);
+}
+
+.aoty-redacted-lines span:last-child {
+  width: 45%;
+}
+
 .aoty-artwork {
   aspect-ratio: 1;
   background: #ded8ce;
