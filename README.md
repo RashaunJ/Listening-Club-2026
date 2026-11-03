@@ -66,6 +66,20 @@ The researched links and unresolved matches are recorded in
 YouTube availability may change or vary by region; update a saved URL or remove
 it to restore the search fallback.
 
+## Album artwork scraper
+
+Download square 1000×1000 artwork and list album metadata and direct track links
+from an Apple Music album page (no API key or additional dependencies):
+
+```sh
+node scripts/scrape-apple-album.mjs "https://music.apple.com/us/album/mud/6800467151" remi-wolf-mud.jpg "Remi Wolf_Mud_2026-11-03.md"
+```
+
+The script saves the JPEG in `public/images/albums/` and adds or updates its
+provenance in `public/images/albums/sources.json`. It prints the artist, title,
+genres, and track URLs for use in review frontmatter; it does not write reviews.
+Re-running replaces that cover and its provenance entry.
+
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

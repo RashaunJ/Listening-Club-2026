@@ -608,7 +608,6 @@
       "channel": "isaiah rashad",
       "verification": "Watch-page metadata returned the matching recording and playability status OK."
     },
-
     {
       "review": "John Coltrane_A Love Supreme_2026-03-17.md",
       "artist": "John Coltrane",
@@ -1028,6 +1027,54 @@
       "url": "https://www.youtube.com/watch?v=qLGwIHjhboA",
       "video_title": "Tame Impala - Is It True (Official Audio)",
       "channel": "tameimpalaVEVO",
+      "verification": "Watch-page metadata returned the matching recording and playability status OK."
+    },
+    {
+      "review": "Remi Wolf_Mud_2026-11-03.md",
+      "artist": "Remi Wolf",
+      "album": "Mud",
+      "track": "Jamie",
+      "search_url": "https://www.youtube.com/results?search_query=Remi%20Wolf%20Jamie",
+      "url": "https://www.youtube.com/watch?v=ME4t7pNApi8",
+      "video_title": "Remi Wolf - Jamie (Official Lyric Video)",
+      "channel": "Remi Wolf",
+      "checked_on": "2026-11-03",
+      "verification": "Watch-page metadata returned the matching recording and playability status OK."
+    },
+    {
+      "review": "Remi Wolf_Mud_2026-11-03.md",
+      "artist": "Remi Wolf",
+      "album": "Mud",
+      "track": "Covered in Mud",
+      "search_url": "https://www.youtube.com/results?search_query=Remi%20Wolf%20Covered%20in%20Mud",
+      "url": "https://www.youtube.com/watch?v=5DTW996ZglU",
+      "video_title": "Remi Wolf - Covered In Mud (Official Lyric Video)",
+      "channel": "Remi Wolf",
+      "checked_on": "2026-11-03",
+      "verification": "Watch-page metadata returned the matching recording and playability status OK."
+    },
+    {
+      "review": "Remi Wolf_Mud_2026-11-03.md",
+      "artist": "Remi Wolf",
+      "album": "Mud",
+      "track": "Champagne",
+      "search_url": "https://www.youtube.com/results?search_query=Remi%20Wolf%20Champagne",
+      "url": "https://www.youtube.com/watch?v=dR8kuO9jt88",
+      "video_title": "Remi Wolf - Champagne (Official Lyric Video)",
+      "channel": "Remi Wolf",
+      "checked_on": "2026-11-03",
+      "verification": "Watch-page metadata returned the matching recording and playability status OK."
+    },
+    {
+      "review": "Remi Wolf_Mud_2026-11-03.md",
+      "artist": "Remi Wolf",
+      "album": "Mud",
+      "track": "Yellow Rose",
+      "search_url": "https://www.youtube.com/results?search_query=Remi%20Wolf%20Yellow%20Rose",
+      "url": "https://www.youtube.com/watch?v=scfG8KtRyGw",
+      "video_title": "Remi Wolf - Yellow Rose (Official Lyric Video)",
+      "channel": "Remi Wolf",
+      "checked_on": "2026-11-03",
       "verification": "Watch-page metadata returned the matching recording and playability status OK."
     }
   ]
