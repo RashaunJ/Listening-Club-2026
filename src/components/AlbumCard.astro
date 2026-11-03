@@ -8,9 +8,18 @@ interface Props {
     href: string;
     cover?: string;
     genres?: string[];
+    reviewedOn?: Date;
 }
 
-const { artist, title, score, href, cover, genres = [] } = Astro.props;
+const {
+    artist,
+    title,
+    score,
+    href,
+    cover,
+    genres = [],
+    reviewedOn,
+} = Astro.props;
 
 const coverUrl = cover ? `${base}images/albums/${cover}` : null;
 ---
@@ -20,6 +29,7 @@ const coverUrl = cover ? `${base}images/albums/${cover}` : null;
     data-score={score}
     data-artist={artist}
     data-title={title}
+    data-listen-date={reviewedOn?.getTime()}
 >
     <a href={href} class="album-card-link">
         <div class="album-card-artwork">

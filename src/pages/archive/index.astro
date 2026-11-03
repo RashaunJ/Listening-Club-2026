@@ -30,13 +30,18 @@ import { base } from "../../paths";
         <div class="archive-toolbar">
             <span class="archive-count">{reviews.length} ALBUMS REVIEWED</span>
 
-            <label>
+            <label for="sort-reviews">
                 Sort by:
-                <label for="sort-reviews">Sort by:</label>
                 <select id="sort-reviews" class="archive-sort">
                     <option value="score-desc">Highest Rated</option>
                     <option value="score-asc">Lowest Rated</option>
                     <option value="artist">Artist A–Z</option>
+                    <option value="listen-date-desc">
+                        Listen Date (Newest First)
+                    </option>
+                    <option value="listen-date-asc">
+                        Listen Date (Oldest First)
+                    </option>
                 </select>
             </label>
         </div>
@@ -49,6 +54,7 @@ import { base } from "../../paths";
                     score={review.data.score}
                     cover={review.data.cover}
                     genres={review.data.genres}
+                    reviewedOn={review.data.reviewed_on}
                     href={`${base}archive/${review.id.split("/").map(encodeURIComponent).join("/")}`}
                 />
             ))}
@@ -66,7 +72,9 @@ import { base } from "../../paths";
     ) {
         sortSelect.addEventListener("change", () => {
             // Get all the album cards currently in the grid
-            const cards = Array.from(grid.querySelectorAll(".album-card"));
+            const cards = Array.from(
+                grid.querySelectorAll<HTMLElement>(".album-card"),
+            );
 
             // Determine which sorting method was selected
             const sortBy = sortSelect.value;
@@ -81,6 +89,18 @@ import { base } from "../../paths";
 
                     case "score-asc":
                         return scoreA - scoreB;
+
+                    case "listen-date-desc":
+                        return (
+                            Number(b.dataset.listenDate) -
+                            Number(a.dataset.listenDate)
+                        );
+
+                    case "listen-date-asc":
+                        return (
+                            Number(a.dataset.listenDate) -
+                            Number(b.dataset.listenDate)
+                        );
 
                     case "artist":
                         return (a.dataset.artist ?? "").localeCompare(
