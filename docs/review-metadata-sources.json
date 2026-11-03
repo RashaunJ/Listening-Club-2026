@@ -724,6 +724,21 @@
       "reviewed_on": "2026-02-23",
       "date_source": "Filename suffix",
       "genre_source": "https://en.wikipedia.org/wiki/Elwan"
+    },
+    {
+      "review": "Remi Wolf_Mud_2026-11-03.md",
+      "artist": "Remi Wolf",
+      "album": "Mud",
+      "source": "https://music.apple.com/us/album/mud/6800467151",
+      "catalog_genres": [
+        "Pop"
+      ],
+      "genres": [
+        "Pop"
+      ],
+      "reviewed_on": "2026-11-03",
+      "date_source": "Filename suffix",
+      "genre_source": "https://music.apple.com/us/album/mud/6800467151"
     }
   ]
 }
