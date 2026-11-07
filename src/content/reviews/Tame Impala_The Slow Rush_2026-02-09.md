@@ -17,4 +17,8 @@ cover: "tame-impala-the-slow-rush.jpg"
 year_rank: 3
 ---
 
-Not necessarily my ideal sound but extremely well produced
+Not necessarily my ideal sound but extremely well produced.
+
+Is what I would have said back in February. This album is what put me on Tame Impala proper. And honestly he became one of my favorite artists this year. Something about that falsetto combined with the soundscape hits so damn well.
+
+Funny enough the B-side of this album has one of my favorite tracks (The Boat I Row) not just from him, but this year in general.
