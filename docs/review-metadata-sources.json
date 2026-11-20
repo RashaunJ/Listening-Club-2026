@@ -739,6 +739,21 @@
       "reviewed_on": "2026-11-03",
       "date_source": "Filename suffix",
       "genre_source": "https://music.apple.com/us/album/mud/6800467151"
+    },
+    {
+      "review": "Rochelle Jordan_Through The Wall_2026-11-20.md",
+      "artist": "Rochelle Jordan",
+      "album": "Through The Wall",
+      "source": "https://music.apple.com/us/album/through-the-wall/1824330589",
+      "catalog_genres": [
+        "Pop"
+      ],
+      "genres": [
+        "Pop"
+      ],
+      "reviewed_on": "2026-11-20",
+      "date_source": "Filename suffix",
+      "genre_source": "https://music.apple.com/us/album/through-the-wall/1824330589"
     }
   ]
 }

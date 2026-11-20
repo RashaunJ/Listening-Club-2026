@@ -1076,6 +1076,54 @@
       "channel": "Remi Wolf",
       "checked_on": "2026-11-03",
       "verification": "Watch-page metadata returned the matching recording and playability status OK."
+    },
+    {
+      "review": "Rochelle Jordan_Through The Wall_2026-11-20.md",
+      "artist": "Rochelle Jordan",
+      "album": "Through The Wall",
+      "track": "Close 2 Me",
+      "search_url": "https://www.youtube.com/results?search_query=Rochelle%20Jordan%20Close%202%20Me",
+      "url": "https://www.youtube.com/watch?v=Mqm-plPGIZM",
+      "video_title": "Rochelle Jordan - Close 2 Me",
+      "channel": "RochelleJordanVEVO",
+      "checked_on": "2026-11-20",
+      "verification": "Watch-page metadata returned the matching recording and playability status OK."
+    },
+    {
+      "review": "Rochelle Jordan_Through The Wall_2026-11-20.md",
+      "artist": "Rochelle Jordan",
+      "album": "Through The Wall",
+      "track": "Doing it Too",
+      "search_url": "https://www.youtube.com/results?search_query=Rochelle%20Jordan%20Doing%20it%20Too",
+      "url": "https://www.youtube.com/watch?v=VIKQBN6mckQ",
+      "video_title": "Rochelle Jordan - Doing It Too (Official Video)",
+      "channel": "RochelleJordanVEVO",
+      "checked_on": "2026-11-20",
+      "verification": "Watch-page metadata returned the matching recording and playability status OK."
+    },
+    {
+      "review": "Rochelle Jordan_Through The Wall_2026-11-20.md",
+      "artist": "Rochelle Jordan",
+      "album": "Through The Wall",
+      "track": "Bite the Bait",
+      "search_url": "https://www.youtube.com/results?search_query=Rochelle%20Jordan%20Bite%20the%20Bait",
+      "url": "https://www.youtube.com/watch?v=RYqYnPuOn0w",
+      "video_title": "Rochelle Jordan - Bite The Bait",
+      "channel": "RochelleJordanVEVO",
+      "checked_on": "2026-11-20",
+      "verification": "Watch-page metadata returned the matching recording and playability status OK."
+    },
+    {
+      "review": "Rochelle Jordan_Through The Wall_2026-11-20.md",
+      "artist": "Rochelle Jordan",
+      "album": "Through The Wall",
+      "track": "Ladida",
+      "search_url": "https://www.youtube.com/results?search_query=Rochelle%20Jordan%20Ladida",
+      "url": "https://www.youtube.com/watch?v=Nk-WOiE61KM",
+      "video_title": "Rochelle Jordan - Ladida",
+      "channel": "RochelleJordanVEVO",
+      "checked_on": "2026-11-20",
+      "verification": "Watch-page metadata returned the matching recording and playability status OK."
     }
   ]
 }
