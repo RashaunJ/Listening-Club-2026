@@ -34,7 +34,11 @@ import { base } from "../../paths";
 
             <label for="sort-reviews">
                 Sort by:
-                <select id="sort-reviews" class="archive-sort">
+                <select
+                    id="sort-reviews"
+                    class="archive-sort"
+                    autocomplete="off"
+                >
                     <option value="listen-date-desc" selected>
                         Listen Date (Newest First)
                     </option>
@@ -72,6 +76,12 @@ import { base } from "../../paths";
         sortSelect instanceof HTMLSelectElement &&
         grid instanceof HTMLElement
     ) {
+        // Keep the dropdown aligned with the order of the rendered cards.
+        const defaultOption = Array.from(sortSelect.options).find(
+            (option) => option.defaultSelected,
+        );
+        if (defaultOption) sortSelect.value = defaultOption.value;
+
         sortSelect.addEventListener("change", () => {
             // Get all the album cards currently in the grid
             const cards = Array.from(
