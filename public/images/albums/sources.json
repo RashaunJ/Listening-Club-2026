@@ -612,6 +612,19 @@
       "width": 1000,
       "height": 1000,
       "bytes": 324448
+    },
+    {
+      "review": "Rochelle Jordan_Through The Wall_2026-11-20.md",
+      "artist": "Rochelle Jordan",
+      "title": "Through The Wall",
+      "matched_artist": "Rochelle Jordan",
+      "matched_title": "Through The Wall",
+      "source": "https://music.apple.com/us/album/through-the-wall/1824330589",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4f/78/f3/4f78f35e-822d-c967-70ce-1594b970d344/199316161663_cover.jpg/1000x1000bb.jpg",
+      "filename": "rochelle-jordan-through-the-wall.jpg",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 176773
     }
   ]
 }

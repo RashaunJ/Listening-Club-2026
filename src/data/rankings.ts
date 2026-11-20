@@ -29,6 +29,7 @@ export const rankings = {
   honorableMentions: [
     "black-flag_damaged_2026-07-13",
     "6lack_love-is-the-new-gangsta_2026-05-22",
-    "charles-mingus_the-black-saint-and-the-sinner-lady_2026-03-21"
+    "charles-mingus_the-black-saint-and-the-sinner-lady_2026-03-21",
+    "rochelle-jordan_through-the-wall_2026-11-20"
   ],
 };

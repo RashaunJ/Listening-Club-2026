@@ -19,4 +19,10 @@ cover: "kenny-mason-bulldawg.jpg"
 year_rank: 9
 ---
 
-Dupa recommendation. Pretty enjoyable listen
+Dupa recommendation. If there's one thing I can say about Kenny Mason every time I listen to a track with him on it, it's that the guy is *hungry*. He's never really resting on his laurels, and this album is a prime example of that.
+
+He keeps the features sparse on this, but the ones that do fit right on (can we please PLEASE get him and JID on more tracks).
+
+The production on here is solid throughout, but he isn't being carried by his producers by any stretch of the imagination.
+
+Solid listen overall.
