@@ -17,4 +17,8 @@ cover: "denzel-curry-strictly-4-the-scythe.jpg"
 year_rank: 5
 ---
 
-The boy did it again. Bangers. Looks like he's having fun with it and the features were all solid l
+The boy did it again. Bangers. Looks like he's having fun with it and the features were all solid. 
+
+Albums that primarily consist of posse cuts can sometimes overstay their welcome, but this one is just fun and at just under 30 minutes, this never feels like it drags.
+
+Side note: TiaCorine was going crazy on every track she was on.
