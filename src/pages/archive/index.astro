@@ -9,7 +9,9 @@ const reviews = await getCollection(
     ({ data }) => data.status === "published",
 );
 
-const sortedReviews = [...reviews].sort((a, b) => b.data.score - a.data.score);
+const sortedReviews = [...reviews].sort(
+    (a, b) => b.data.reviewed_on.getTime() - a.data.reviewed_on.getTime(),
+);
 
 import { base } from "../../paths";
 ---
@@ -33,15 +35,15 @@ import { base } from "../../paths";
             <label for="sort-reviews">
                 Sort by:
                 <select id="sort-reviews" class="archive-sort">
-                    <option value="score-desc">Highest Rated</option>
-                    <option value="score-asc">Lowest Rated</option>
-                    <option value="artist">Artist A–Z</option>
-                    <option value="listen-date-desc">
+                    <option value="listen-date-desc" selected>
                         Listen Date (Newest First)
                     </option>
                     <option value="listen-date-asc">
                         Listen Date (Oldest First)
                     </option>
+                    <option value="score-desc">Highest Rated</option>
+                    <option value="score-asc">Lowest Rated</option>
+                    <option value="artist">Artist A–Z</option>
                 </select>
             </label>
         </div>
