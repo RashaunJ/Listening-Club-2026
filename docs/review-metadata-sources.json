@@ -754,6 +754,22 @@
       "reviewed_on": "2026-11-20",
       "date_source": "Filename suffix",
       "genre_source": "https://music.apple.com/us/album/through-the-wall/1824330589"
+    },
+    {
+      "review": "Toro y Moi_Unusua_2026-11-23.md",
+      "artist": "Toro y Moi",
+      "album": "Unusua",
+      "source": "https://music.apple.com/us/album/unusua/6823370459",
+      "catalog_genres": [
+        "Instrumental"
+      ],
+      "genres": [
+        "Instrumental",
+        "Ambient"
+      ],
+      "reviewed_on": "2026-11-23",
+      "date_source": "Filename suffix",
+      "genre_source": "https://music.apple.com/us/album/unusua/6823370459 (Instrumental); review text (Ambient)"
     }
   ]
 }
