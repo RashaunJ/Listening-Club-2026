@@ -1124,6 +1124,18 @@
       "channel": "RochelleJordanVEVO",
       "checked_on": "2026-11-20",
       "verification": "Watch-page metadata returned the matching recording and playability status OK."
+    },
+    {
+      "review": "Toro y Moi_Unusua_2026-11-23.md",
+      "artist": "Toro y Moi",
+      "album": "Unusua",
+      "track": "Keynote",
+      "search_url": "https://www.youtube.com/results?search_query=Toro+y+Moi+Unusua+Keynote",
+      "url": "https://www.youtube.com/watch?v=hmWML7PxEsc",
+      "video_title": "Toro y Moi - Keynote",
+      "channel": "Toro y Moi",
+      "checked_on": "2026-11-23",
+      "verification": "Watch-page metadata returned the matching recording and playability status OK."
     }
   ]
 }
